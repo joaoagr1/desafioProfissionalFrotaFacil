@@ -168,3 +168,50 @@ height: 150px;
 background-color: #052b58;
 
 }
+
+
+
+.colaboladores{
+ display: flex;
+ flex-direction: row;
+ justify-content: center;
+ background-color: rgb(255, 255, 255);
+ 
+ 
+  
+}
+
+.colaboladoresConteudo{
+
+  gap: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: relative;
+  max-width:300px; 
+  max-height:250px;
+  width: auto;
+  height: auto;
+  margin-top: 100px;
+}
+
+.colaboradoresFoto{
+ 
+  
+}
+
+.colaboladoresBox{
+
+  gap: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width:300px; 
+  max-height:250px;
+  width: auto;
+  height: auto;
+  margin-top: 100px;
+  font-family: 'Sarala', sans-serif;
+ 
+  
+}
