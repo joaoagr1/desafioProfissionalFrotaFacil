@@ -1,42 +1,42 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Frota Fácil - Login</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="login.css">
-    
+    <link rel="stylesheet" href="../public/css/style.css">
+    <link rel="stylesheet" href="../public/css/login.css">
+
 </head>
+
 <body>
     <header>
         <header class="cabecalho">
-            <img class="cabecalho-imagem" src="../public/img/fundoeditado.png" alt="Logo da comunidade Ballerini">
-      
+            <a href="index4.html"> <img class="cabecalho-imagem" src="../public/img/fundoeditado.png"
+                    alt="Logo da comunidade Ballerini"></a>
+            
             <nav class="cabecalho-menu">
-              <!-- <a class="cabecalho-menu-item" href="https://discord.gg/wagxzStdcR">Contato</a>
-              <a class="cabecalho-menu-item">Apresentação</a>
-              <a class="cabecalho-menu-item">Diretrizes</a>
-              <a class="cabecalho-menu-item">Comunidade</a> -->
+                <a href="cadastro.html" class="link">Não possui uma conta? Cadastre-se</a>
             </nav>
-          </header>
+        </header>
     </header>
     <main class="flex">
-        
-        <form method="post" class="flex">
-            <button id="Cadastro">Cadastre-se</button>
-         <section class="flex">    
-       <input type="text" placeholder="Nome">
-       <input type="text" placeholder="Sobrenome"> 
-       <input type="email" placeholder="E-mail">
-       <input type="tel" placeholder="Telefone">
-       <input type="text" placeholder="CEP">
-     <a href="index4.html">  <img src="../public/img/picwish.png" alt="logomarca Frota Fácil" id="logo"></a>
-    </section>   
-        <input id="botao" type="submit" name="CADASTRAR" value="CADASTRAR">
+        <section class="flex">
+            <form action="" id="login-form">
+                <label for="email" class="input-label">E-mail</label>
+                <input type="email" name="email" id="ceo" class="input-text">
+                <label for="cep" class="input-label">Senha</label>
+                <input type="text" name="cep" id="ceo" class="input-text">
+                <button type="submit" class="button">Entrar</button>
+            </form>
+            <!-- <img src="../public/img/picwish.png" alt="logomarca Frota Fácil" class="cabecalho-imagem" id="logo"> -->
+            <!-- <a href="index4.html">Já possui conta? Entre</a> -->
+        </section>
         </form>
-      
+
     </main>
 </body>
+
 </html>
