@@ -94,7 +94,6 @@ body {
    
   .input-label {
     display: block;
-    color: #b6b6b6;
     font-size: 0.8rem;
     margin: 20px 0 5px;
   }
@@ -146,4 +145,8 @@ body {
   }
   #esqueceu_senha{
     color: #000;
+  }
+
+  #link_dif{
+    color: brown;
   }
