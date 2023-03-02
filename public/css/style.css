@@ -173,7 +173,6 @@ background-color: #052b58;
 
 .colaboladores{
  display: flex;
- flex-direction: row;
  justify-content: center;
  background-color: rgb(255, 255, 255);
  
@@ -182,7 +181,7 @@ background-color: #052b58;
 }
 
 .colaboladoresConteudo{
-
+  
   gap: 40px;
   display: flex;
   flex-direction: row;
@@ -196,12 +195,9 @@ background-color: #052b58;
 }
 
 .colaboradoresFoto{
- 
-  
 }
 
 .colaboladoresBox{
-
   gap: 50px;
   display: flex;
   flex-direction: column;
@@ -211,7 +207,20 @@ background-color: #052b58;
   width: auto;
   height: auto;
   margin-top: 100px;
-  font-family: 'Sarala', sans-serif;
- 
-  
+  font-family: 'Sarala', sans-serif; 
 }
+
+.colaboladoresTexto{
+  display: flex;
+  justify-content: center;
+  font-family: 'Autour One';
+  font-size: 30px;
+  gap: 10px;
+  color: black;
+}
+
+.colaboladoresicon{
+
+  width: 30px;
+}
+
