@@ -1,0 +1,8 @@
+body .bg{
+    
+    background-image: url(/public/img/transito3.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+   
+}   
