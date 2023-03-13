@@ -1,24 +1,21 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Frota Fácil - Login</title>
-    <link rel="stylesheet" href="../public/css/style.css">
-    <link rel="stylesheet" href="../public/css/login.css">
-
+    <title>Frota Fácil - Redefinir Senha</title>
+    <link rel="stylesheet" href="../views/css/style.css">
+    <link rel="stylesheet" href="../views/css/login.css">
 </head>
-
 <body>
     <header>
         <header class="cabecalho">
-            <a href="index4.html"> <img class="cabecalho-imagem" src="../public/img/fundoeditado.png"
+            <a href="index.html"> <img class="cabecalho-imagem" src="./views/img/fundoeditado.png"
                     alt="Logo da comunidade Ballerini"></a>
             
             <nav class="cabecalho-menu">
-                <a href="cadastro.html" class="link">Não possui uma conta? <b id="link_dif">Cadastre-se</b></a>
+                <a href="cadastro.html" class="link">Não possui uma conta? Cadastre-se</a>
             </nav>
         </header>
     </header>
@@ -27,16 +24,14 @@
             <form action="" id="login-form">
                 <label for="cadastro" class="input-label">Cadastro</label>
                 <input type="cadastro" name="cadastro" id="cadastro" class="input-text">
+                <label for="email" class="input-label">E-mail</label>
+                <input type="e-mail"  id="e-mail" class="input-text">
                 <label for="empresa" class="input-label">Empresa</label>
                 <select name="empresa" id="">
                     <option value="PMM">PMM</option>
                     <option value="Randon">Randon</option>
                 </select>
-                <!-- <input type="text" name="empresa" id="empresa" class="input-text"> -->
-                <label for="cep" class="input-label">Senha</label>
-                <input type="password" name="senha" id="senha" class="input-text">
-                <a href="redefinirSenha.html" id="esqueceu_senha">Esqueceu sua senha?</a>
-                <button type="submit" class="button">Entrar</button>
+                <button type="submit" name="enviar" class="button" id="enviar">Enviar</button>
             </form>
             <!-- <img src="../public/img/picwish.png" alt="logomarca Frota Fácil" class="cabecalho-imagem" id="logo"> -->
             <!-- <a href="index4.html">Já possui conta? Entre</a> -->
@@ -45,5 +40,5 @@
 
     </main>
 </body>
-
+<script src="../controler/function.js"></script>
 </html>
