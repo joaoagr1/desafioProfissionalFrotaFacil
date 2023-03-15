@@ -200,7 +200,7 @@ nav h1{
 
 
 .div-three{
-    background-image: url(../ReajusteTrabalhoFT/fundo-div-three.png);
+    background-image: url(fundo-div-three.png);
     object-fit:cover;
     margin-top: 200px;
     height: 100vh;
