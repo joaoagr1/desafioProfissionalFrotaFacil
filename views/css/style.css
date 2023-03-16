@@ -57,6 +57,13 @@ text-decoration: none;
     margin-left: 40px;
     /* text-shadow: black 0.1em 0.1em 0.1em */
 }
+.div-one-titulo2{
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+    font-size: 55px;
+    margin-bottom: 5px;
+    margin-left: 40px;
+}
 
 .div-one-texto{
     align-items: center;
