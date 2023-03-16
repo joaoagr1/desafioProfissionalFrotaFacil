@@ -8,7 +8,6 @@ main.flex{
     justify-content: center;
     justify-items: center;
     /* position: absolute; */
-    
 
    
 }
@@ -135,22 +134,7 @@ body {
     color: #dddcdc;
     background-color: #f6f6f6;
   }
-  .cabecalho{
-    background-color: rgb(18, 188, 137);
-    position: fixed;
-    top: auto;
-    margin: auto;
-    right: auto;
-    width: 100%;
-    display: block;
-    align-items: baseline;
-    /* align-items: center ; */
-    padding: 30px; 
-
-
-
-
-  }
+  
   .cabecalho-imagem #logo{
     height: 85px;
     margin-left :400px;
@@ -166,31 +150,3 @@ body {
   #link_dif{
     color: brown;
   }
-
-
-  .menu{
-    font-family: 'Sarala', cursive;
-    font-weight: bolder;
-    
-    background-color: rgb(18, 188, 137);
-    position: fixed;
-    top: auto;
-    margin: auto;
-    right: auto;
-    width: 100%;
-    display: block;
-    align-items: baseline;
-    /* align-items: center ; */
-    padding: 30px; 
-    
-    
-}
-
-.menu-section{
-    align-items: baseline;
-    display: flex;
-    justify-content: space-between;
-    
-    
-    
-}

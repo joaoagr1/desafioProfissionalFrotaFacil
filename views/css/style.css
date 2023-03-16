@@ -105,7 +105,7 @@ nav h1{
     font-family: 'Sarala', cursive;
     font-weight: bolder;
     
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(18, 188, 137);
     position: fixed;
     top: auto;
     margin: auto;
@@ -127,6 +127,7 @@ nav h1{
     
     
 }
+
 
 .menu-ul{
     display: flex;
@@ -157,7 +158,7 @@ nav h1{
     margin: 50px;
     padding: 30;
     border: 0;
-    position: relative;
+    /* position: relative; */
     margin-top: 100px;
     text-align: center;
     align-items: center;
@@ -239,6 +240,28 @@ nav h1{
 	margin-bottom:2em;
 
 }
+
+.conteudo-principal-escrito-botao {
+    background-color:  white;
+    width: 180px;
+    height: 60px;
+    border: none;
+    box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    font-family: 'Sarala', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    color: #2F2325;
+    margin-left: 500px;
+    margin-top: 80px;
+  }
+  
+  .conteudo-principal-escrito-botao:hover {
+    background-color: rgba(236, 214, 196, 0.53);
+    cursor:pointer;
+    color: #fff;
+  }
+  
 
 .colfooter ul        { width:100%; float:left; }
 .colfooter ul li     { padding:0.2em 0em; }
