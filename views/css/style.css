@@ -94,13 +94,13 @@ text-decoration: none;
 }
 
 
-.menu a{
-    color: rgb(255, 255, 255);
-}
+
 nav h1{
     color: white;
 }
-
+.menu a{
+    color: rgb(255, 255, 255);
+}
 .menu{
     font-family: 'Sarala', cursive;
     font-weight: bolder;
@@ -135,6 +135,35 @@ nav h1{
     margin-right: 70px;
     gap: 50px;
 }
+
+/* teste de importação novo cabecalho do index4 antigo */
+.cabecalho {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 24px;
+    background-color: rgb(18, 188, 137);
+   position: fixed;
+   width: 100%;
+   height: 50px;
+  }
+  
+  .cabecalho-imagem {
+    height: 100px;
+  }
+  
+  .cabecalho-menu {
+    display: flex;
+    gap: 32px;
+  }
+  
+  .cabecalho-menu-item {
+    font-family: 'Sarala', sans-serif;
+    color:white;
+    font-weight: 400;
+    font-size: 18px
+  }
 
 .div-one-section2{
     max-width: 10%;
