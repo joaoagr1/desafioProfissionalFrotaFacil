@@ -21,7 +21,7 @@ main.flex section.flex{
   border: 2px solid black;
   justify-content: center;
   justify-items: center;
-  margin-top: 50px;
+  margin-top: 200px;
   margin-left: 550px;
   flex-direction: row;
 }
@@ -129,6 +129,7 @@ body {
   
   .button:hover {
     opacity: 70%;
+    cursor: pointer;
   }
   
   .button:disabled {

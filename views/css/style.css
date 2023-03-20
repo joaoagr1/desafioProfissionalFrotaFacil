@@ -52,8 +52,9 @@ text-decoration: none;
     font-family: 'Roboto', sans-serif;
     font-weight: bolder;
     font-size: 70px;
-    margin-bottom: 90px;
+    margin-bottom: 33px;
     margin-left: 40px;
+    margin-top: 50px;
     /* text-shadow: black 0.1em 0.1em 0.1em */
 }
 .div-one-titulo2{
@@ -151,6 +152,7 @@ nav h1{
   
   .cabecalho-imagem {
     height: 100px;
+    /* margin-right: 400px; */
   }
   
   .cabecalho-menu {
@@ -162,7 +164,8 @@ nav h1{
     font-family: 'Sarala', sans-serif;
     color:white;
     font-weight: 400;
-    font-size: 18px
+    font-size: 22px;
+    margin-left: 20px;
   }
 
 .div-one-section2{
@@ -183,12 +186,12 @@ nav h1{
 
 .div-two-title{
     display: flex;
-    margin-top: 500px;
     margin: 50px;
     padding: 30;
     border: 0;
     /* position: relative; */
-    margin-top: 100px;
+    margin-top: 90px;
+    margin-bottom: 33px;
     text-align: center;
     align-items: center;
     
