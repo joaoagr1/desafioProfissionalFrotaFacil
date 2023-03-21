@@ -149,6 +149,8 @@ nav h1{
   .cabecalho-imagem {
     height: 100px;
     /* margin-right: 400px; */
+    left: 2%;
+    margin-left: -270px;
   }
   
   .cabecalho-menu {
