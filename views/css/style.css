@@ -149,12 +149,6 @@ nav h1{
   .cabecalho-imagem {
     height: 100px;
     /* margin-right: 400px; */
-    position: relative;
-    /* float: right; */
-
-    /* alteração para imagem ficar no canto */
-    left: 2%;
-     margin-left: -300px;
   }
   
   .cabecalho-menu {
@@ -241,7 +235,7 @@ nav h1{
 
 
 .div-three{
-    background-image: url(/views/img/fundo-div-three.png);
+    background-image: url(/views/img/fundo-div-two.png);
     object-fit:cover;
     margin-top: 200px;
     height: 100vh;
