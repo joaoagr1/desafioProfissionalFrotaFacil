@@ -85,8 +85,8 @@ text-decoration: none;
     font-weight: bolder;
     font-size: 70px;
     margin-bottom: 33px;
-    margin-left: 40px;
-    margin-top: 50px;
+    margin-left: 26px;
+    margin-top: 100px;
     /* text-shadow: black 0.1em 0.1em 0.1em */
 }
 .div-one-titulo2{
@@ -94,7 +94,7 @@ text-decoration: none;
     font-weight: bolder;
     font-size: 55px;
     margin-bottom: 5px;
-    margin-left: 40px;
+    margin-left: 26px;
 }
 
 .div-one-texto{
@@ -150,13 +150,17 @@ nav h1{
     height: 100px;
     /* margin-right: 400px; */
     left: 2%;
-    margin-left: -230px;
+    margin-left: 26px;
+    position: absolute;
+    
   }
   
   .cabecalho-menu {
     display: flex;
     gap: 32px;
     right: 40%;
+    margin-left: 475px;
+    
   }
   
   .cabecalho-menu-item {
@@ -165,6 +169,7 @@ nav h1{
     font-weight: 400;
     font-size: 22px;
     margin-left: 20px;
+    
   }
 
 .div-one-section2{
@@ -176,10 +181,11 @@ nav h1{
 }
 
 .div-one img{
-    max-height: 400%;
-    max-width: 400%;
+    max-height: 390%;
+    max-width: 390%;
     object-fit: cover;
-    margin-left: 20px;
+    margin-left: -15px;
+    
 }
 
 
