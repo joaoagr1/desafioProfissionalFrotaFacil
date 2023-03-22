@@ -156,6 +156,7 @@ nav h1{
   .cabecalho-menu {
     display: flex;
     gap: 32px;
+    right: 40%;
   }
   
   .cabecalho-menu-item {
