@@ -1,8 +1,13 @@
 
+/* ---------------------------------BIBLIOTECAS--------------------------------------- */
 #include <stdio.h> 
 #include <stdlib.h>
 #include <string.h>
 
+
+
+
+/* ---------------------------------VARIAVEIS--------------------------------------- */
 
     char cadastroUsuario[30];
     char cadastroSenha[30];
@@ -15,13 +20,13 @@ struct pessoa{
 } pessoa;
 
 
+
+
+/* ---------------------------------PRINCIPAL--------------------------------------- */
+
 int main(){
 
    
-
-    
-
-
     funcaoCadastro();
     
 
@@ -37,7 +42,7 @@ int main(){
 
 
 
-
+/* ---------------------------------FUNÇÕES--------------------------------------- */
 
 funcaoCadastro(){
 
@@ -50,14 +55,15 @@ funcaoCadastro(){
     gets(cadastroSenha);
     fflush(stdin);
 
+     strcpy(pessoa.login, cadastroUsuario);
+    strcpy(pessoa.senha, cadastroSenha);
+
     return;
 }
 
 
 
-
 funcaoLogin(){
-    
     
     printf("\nlogin:");
     gets(login);
@@ -66,11 +72,17 @@ funcaoLogin(){
     printf("\nsenha:");
     gets(senha); 
     fflush(stdin);
+                
+    return validacaoLogin();
+    }
 
-    if ((strcmp(login,pessoa.login)==0) && (strcmp(senha,pessoa.senha)==0)){ 
+
+
+    validacaoLogin(){
+        if ((strcmp(login,pessoa.login)==0) && (strcmp(senha,pessoa.senha)==0)){ 
         printf("Usuário logado");
     }else{
         printf("Login e/ou senha incorretos"); 
     }
-    return;
+
     }
