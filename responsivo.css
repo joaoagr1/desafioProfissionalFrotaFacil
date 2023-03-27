@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+
+  #navbar{
+    width: 100%;
+    background: rgb(18, 188, 137);
+    color: #fff;
+    height: 80px;
+    position: fixed;
+
+
+}
+
+#navbar-container{
+  width: 80%;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#navbar-itens{
+  display: flex;
+  list-style: none;
+  text-transform: uppercase;
+}
+
+#navbar-itens li{
+  padding: 10px;
+}
+
+#logo{
+    height: 120px;
+    width: auto;
+    /* left: 30px; */
+    margin-left: -50px;
+
+}
+
+/* primeiro container */
+
+#div-container1{
+    background-color:  #0B1433;
+    width: 100%;
+   
+   
+}

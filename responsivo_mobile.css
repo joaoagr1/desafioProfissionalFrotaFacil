@@ -1,0 +1,30 @@
+#navbar {
+    height: 350px;
+}
+
+#logo{
+    margin-left: 30px;
+}
+
+#navbar-container {
+    flex-direction: column;
+    padding: 20px 0;
+}
+
+#navbar-itens {
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    
+}
+
+#navbar-itens li:nth-child(2) {
+    border-top: 1px solid #333;
+    border-bottom: 1px solid #333;
+}
+
+#navbar-itens li:nth-child(3) {
+    /* border-top: 1px solid #333; */
+    border-bottom: 1px solid #333;
+}
+
