@@ -30,8 +30,8 @@ int main(){
 
     
 
-    strcpy(p[1].login, cadastroUsuario); // Copia o nome do usuario no login da pessoa 0
-    strcpy(p[1].senha, cadastroSenha); // Copia a senha cadastrada no campo senha da pessoa 0 
+    strcpy(p[0].login, cadastroUsuario); // Copia o nome do usuario no login da pessoa 0
+    strcpy(p[0].senha, cadastroSenha); // Copia a senha cadastrada no campo senha da pessoa 0 
     
 
     funcaoLogin(); // Chama função funcaoLogin
