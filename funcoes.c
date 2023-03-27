@@ -1,15 +1,13 @@
-/*-------------- SISTEMA DE LOGIN E SENHA: [CMD/TERMINAL] ------------
-By: David Robert | link do tutorial no youtube: https://youtu.be/kePxRO98lEY */
 
-#include <stdio.h> // padrão
-#include <stdlib.h> // padrão
-#include <string.h> // Essa biblioteca serve para usar os structs e manipulação de strings
+#include <stdio.h> 
+#include <stdlib.h>
+#include <string.h>
 
 
-typedef struct{
-    char login[30]; // vetor login da struct pessoa
-    char senha[30]; // vetor senha da struct pessoa
-} pessoa; pessoa p[0];  // diminuindo o nome da struct para "p" e o "[1]" é o máximo de pessoas com logins e senhas
+struct pessoa{
+    char login[30]; 
+    char senha[30]; 
+} pessoa;
 
 
 int main(){
@@ -23,26 +21,32 @@ int main(){
 
     printf("Vamos Cadastrar um usuário\n");
     printf("Insira seu nome de usuário:   \n");
-    scanf("%s",&cadastroUsuario[30]);
+    gets(cadastroUsuario);
+    fflush(stdin);
     
     printf("Vamos cadastrar uma senha");
-    scanf("%s",&cadastroSenha[30]);
+    gets(cadastroSenha);
+    fflush(stdin);
 
+   
 
      
 
-    strcpy(p[0].login, cadastroUsuario);
-    strcpy(p[0].senha, cadastroSenha); 
+    strcpy(pessoa.login, cadastroUsuario);
+    strcpy(pessoa.senha, cadastroSenha); 
+    
     printf("\nlogin:");
-    scanf("%s", login); // armazenando os dados inseridos pelo usuário para o vetor login que está dentro da função main
+    gets(login);
+    fflush(stdin);
 
     printf("\nsenha:");
-    scanf("%s", senha); // armazenando os dados inseridos pelo usuário para o vetor senha que está dentro da função main
+    gets(senha); 
+    fflush(stdin);
 
-    if ((strcmp(login,p[0].login)==0) && (strcmp(senha,p[0].senha)==0)){ // A função strcmp é responsável por comparar string com string
-        printf("Usuário logado"); // se os vetores de dentro da struct tiver os mesmos dados do vetor interno da função main, usuário será logado.
+    if ((strcmp(login,pessoa.login)==0) && (strcmp(senha,pessoa.senha)==0)){ 
+        printf("Usuário logado");
     }else{
-        printf("Login e/ou senha incorretos"); // senão, login ou senha incorreta.
+        printf("Login e/ou senha incorretos"); 
     }
     return 0;
 }
