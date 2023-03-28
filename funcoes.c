@@ -1,52 +1,23 @@
+#include<stdio.h> 
+#include<stdlib.h>
+#include<string.h>
 
-#include <stdio.h> 
-#include <stdlib.h>
-#include <string.h>
-
-
-struct pessoa{
-    char login[30]; 
-    char senha[30]; 
-} pessoa;
-
-
+char cadastroUsuario[30], cadastroSenha[30];
+ 
 int main(){
 
-    char cadastroUsuario[30];
-    char cadastroSenha[30];
-
-    char login[30];
-    char senha[30];
-
-
+ do{
     printf("Vamos Cadastrar um usuário\n");
     printf("Insira seu nome de usuário:   \n");
     gets(cadastroUsuario);
     fflush(stdin);
-    
-    printf("Vamos cadastrar uma senha");
-    gets(cadastroSenha);
-    fflush(stdin);
+    if (20<strlen(cadastroUsuario)<5)
+    {
+        printf("O nome deve ter mais de 5 e menos de 20 caracteres");
+    } 
+    }while(20<strlen(cadastroUsuario) && strlen(cadastroUsuario)<5);
 
-   
 
-     
 
-    strcpy(pessoa.login, cadastroUsuario);
-    strcpy(pessoa.senha, cadastroSenha); 
-    
-    printf("\nlogin:");
-    gets(login);
-    fflush(stdin);
-
-    printf("\nsenha:");
-    gets(senha); 
-    fflush(stdin);
-
-    if ((strcmp(login,pessoa.login)==0) && (strcmp(senha,pessoa.senha)==0)){ 
-        printf("Usuário logado");
-    }else{
-        printf("Login e/ou senha incorretos"); 
-    }
-    return 0;
+    return;
 }

@@ -71,6 +71,12 @@ funcaoCadastro(){ //Função que solicita os dados a serem cadastrados
     } 
     }while(20<strlen(cadastroSenha) || strlen(cadastroSenha)<5);
 
+
+
+
+     strcpy(p[0].login, cadastroUsuario);
+    strcpy(p[0].senha, cadastroSenha);
+
     return;
 }
 
