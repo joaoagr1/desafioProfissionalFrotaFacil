@@ -25,14 +25,20 @@ typedef struct{
 
 int main(){
 
-   
+    system("clear");
+
     funcaoCadastro(); // Chama o procedimento de Cadastro
+
+   
+    system("clear");
 
     
 
     strcpy(p[0].login, cadastroUsuario); // Copia o nome do usuario no login da pessoa 0
     strcpy(p[0].senha, cadastroSenha); // Copia a senha cadastrada no campo senha da pessoa 0 
     
+
+    system("clear");
 
     funcaoLogin(); // Chama função funcaoLogin
     
@@ -45,15 +51,16 @@ int main(){
 /* ---------------------------------FUNÇÕES--------------------------------------- */
 
 funcaoCadastro(){ //Função que solicita os dados a serem cadastrados
-
+    printf("<-----Vamos Cadastrar um usuário----->\n\n");
     do{
-    printf("Vamos Cadastrar um usuário\n");
-    printf("Insira seu nome de usuário:   \n");
+    
+    printf("\n Insira seu nome de usuário:   ");
     gets(cadastroUsuario);
     fflush(stdin);
     if (20<strlen(cadastroUsuario) || strlen(cadastroUsuario)<5)
     {
-        printf("O nome deve ter mais de 5 e menos de 20 caracteres");
+        printf(" <-----O nome deve ter mais de 5 e menos de 20 caracteres----->");
+        
     } 
     }while(20<strlen(cadastroUsuario) || strlen(cadastroUsuario)<5);
 
@@ -61,13 +68,14 @@ funcaoCadastro(){ //Função que solicita os dados a serem cadastrados
 
 
     do{
-    printf("Vamos cadastrar uma senha");
+
+    printf("\n Vamos cadastrar uma senha:   ");
     gets(cadastroSenha);
     fflush(stdin);
 
     if (20<strlen(cadastroSenha) || strlen(cadastroSenha)<5)
     {
-        printf("A senha deve ter mais de 5 e menos de 20 caracteres");
+        printf(" <-----A senha deve ter mais de 5 e menos de 20 caracteres----->");
     } 
     }while(20<strlen(cadastroSenha) || strlen(cadastroSenha)<5);
 
@@ -83,14 +91,17 @@ funcaoCadastro(){ //Função que solicita os dados a serem cadastrados
 
 
 funcaoLogin(){ //Função que solicita os dados já cadastrados para validação
-    
-    printf("\nlogin:");
+
+    printf("<-----Vamos efetuar o login----->\n\n\n");
+    printf("login:   ");
     gets(login);
     fflush(stdin);
 
-    printf("\nsenha:");
+    printf("senha:   ");
     gets(senha); 
     fflush(stdin);
+
+    system("clear");
                 
     return validacaoLogin(); //Retorna chamando função de autênticação
     }
@@ -99,9 +110,11 @@ funcaoLogin(){ //Função que solicita os dados já cadastrados para validação
 
     validacaoLogin(){ //Função que compara o valor inserido no login com os valores de pessoa
         if ((strcmp(login,p[0].login)==0) && (strcmp(senha,p[0].senha)==0)){ 
-        printf("Usuário logado");
+        printf("<-----Usuário logado----->");
     }else{
-        printf("Login e/ou senha incorretos"); 
+        printf("<-----Login e/ou senha incorretos----->"); 
     }
+
+        
 
     }

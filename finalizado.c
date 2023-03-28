@@ -48,7 +48,7 @@ funcaoCadastro(){ //Função que solicita os dados a serem cadastrados
 
     do{
     printf("Vamos Cadastrar um usuário\n");
-    printf("Insira seu nome de usuário:   \n");
+    printf("Insira seu nome de usuário:   ");
     gets(cadastroUsuario);
     fflush(stdin);
     if (20<strlen(cadastroUsuario) || strlen(cadastroUsuario)<5)
@@ -61,7 +61,7 @@ funcaoCadastro(){ //Função que solicita os dados a serem cadastrados
 
 
     do{
-    printf("Vamos cadastrar uma senha");
+    printf("Vamos cadastrar uma senha:   ");
     gets(cadastroSenha);
     fflush(stdin);
 
