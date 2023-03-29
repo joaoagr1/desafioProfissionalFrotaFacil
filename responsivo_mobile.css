@@ -41,7 +41,7 @@
     /* justify-content: center; */
     align-items: center;
     color: #eee;
-
+    flex-direction: column;
 
   /* overlay */
   /* background-color: rgba(0, 0, 0, 0.5); */
@@ -51,7 +51,9 @@
 #div-container1{
     display: flex;
     /* justify-content: center; */
-    margin-top: 30px;
+    margin-top: 220px;
+    margin-bottom: -80px;
+    
   }
 
 .div-one-titulo {
@@ -70,11 +72,11 @@
   
   .conteudo-principal-escrito-botao {
     background-color: white;
-    width: 120px;
-    height: 40px;
+    width: 100px;
+    height: 30px;
     border: none;
     box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 12px;
+    border-radius: 9px;
     font-family: 'Sarala', sans-serif;
     /* font-weight: 400; */
     font-size: 12px;
@@ -89,5 +91,7 @@
     color: #fff;
   }
 
-
-
+  .div-one-section2-img{
+    
+    height: 90px;
+  }
