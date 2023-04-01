@@ -190,11 +190,14 @@
   width: 90%;
   margin: 0 5%;
   padding: 5em 0;
+  display: flex;
+  flex-direction: row;
 }
 
 .container {
   float: left;
   width: 100%;
+  
 }
 
 .colfooter {
@@ -203,6 +206,7 @@
   height: auto;
   float: left;
   margin-bottom: 2em;
+ 
 
 }
 
@@ -235,6 +239,8 @@
 
 .colfooter ul li {
   padding: 0.2em 0em;
+  list-style: none;
+  margin-left: -40px;
 }
 
 .colfooter ul li a {
@@ -447,6 +453,26 @@
    margin-left: 10px;
    
   }
+}
+@media (max-width:1280px){
+  .div-one-titulo {
+    font-size: 55px;
+    margin-right: 15px;
+   
+  }
+  .div-one-titulo2{
+    font-size: 45px;
+  }
+  .div-one-section2-img{
+ 
+   margin-left: 100px;
+   
+  }
+  .conteudo-principal-escrito-botao{
+    margin-top: 25px;
+  }
+
+
 }
 
 /* @media (min-width : 1438) and (max-width:1476){

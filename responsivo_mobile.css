@@ -116,3 +116,12 @@
   display: flex;
   flex-direction: column;
 }
+
+/* estilização do footer  */
+
+
+
+.main_footer .content {
+  display: block;
+}
+
