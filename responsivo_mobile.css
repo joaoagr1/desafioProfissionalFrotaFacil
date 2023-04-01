@@ -104,3 +104,15 @@
 #features-container .feature:nth-child(2) {
   margin: 15px 0;
 }
+
+#div-three{
+  background-image: url(/views/img/fundo-div-two.png);
+  object-fit: cover;
+  height: 0px;
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
