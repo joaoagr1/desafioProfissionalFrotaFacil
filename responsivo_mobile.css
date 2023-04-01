@@ -57,7 +57,7 @@
   }
 
 .div-one-titulo {
-    font-size: 20px;
+    font-size: 1.5rem;
     margin-bottom: 10px;
     margin-left: 15px;
   
@@ -65,7 +65,7 @@
   }
   
   .div-one-titulo2 {
-    font-size: 15px;
+    font-size: 1.2rem;
     margin-left:15px;
   }
   
@@ -95,3 +95,12 @@
     
     height: 90px;
   }
+
+  /* Features */
+#features-container {
+  grid-template-columns: 1fr;
+}
+
+#features-container .feature:nth-child(2) {
+  margin: 15px 0;
+}

@@ -117,8 +117,50 @@
   color: #fff;
 }
 
+/* import css TI SOLUTIONS */
+/* about */
+.headline{
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  font-family: 'Roboto', sans-serif;
+  /* font-weight: bold; */
+  text-align: center;
+  /* align-items: center; */
+  padding-bottom: 50px;
+  letter-spacing: 2px;
+  color: black;
 
+}
 
+#features{
+  width: 100%;
+  background: #FFF;
+  color: #eee;
+  padding: 50px;
+ 
+}
+
+#features-container{
+  width: 100%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 50px;
+}
+
+.feature{
+  display: flex;
+  flex-direction: column;
+  background: #333;
+  padding: 20px;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.feature-title{
+  font-size: 1.5rem;
+  font-weight: bold;
+}
 
 /* 850 */
 @media  (max-width: 856px) {
