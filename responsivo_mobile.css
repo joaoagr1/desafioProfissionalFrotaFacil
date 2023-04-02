@@ -94,6 +94,8 @@
   .div-one-section2-img{
     
     height: 90px;
+    /* justify-content: center; */
+    margin-right: 100px;
   }
 
   /* Features */
