@@ -1,10 +1,12 @@
+/* *RESET */
 *{
     margin: 0;
     border: 0;
     box-sizing: border-box;
 }
 
-/* NAVBAR */
+/* *NAVBAR */
+
 #navbar{
    width: 100%;
   background: rgb(18, 188, 137);
@@ -43,7 +45,7 @@
 
 }
 
-/* primeiro container */
+/* *primeiro container */
 
 #container1{
     background-color:  #0B1433;
@@ -97,7 +99,7 @@
   font-size: 20px;
 }
 
-/* BOTÃO  */
+/** BOTÃO  */
 .conteudo-principal-escrito-botao {
   background-color: white;
   width: 180px;
@@ -119,7 +121,7 @@
   color: #fff;
 }
 
-/* import css TI SOLUTIONS */
+/** import css TI SOLUTIONS */
 /* about */
 .headline{
   font-size: 2rem;
@@ -177,7 +179,7 @@
   flex-direction: column; */
 }
 
-/* estilização do footer  */
+/** estilização do footer  */
 
 
 .main_footer {
@@ -441,6 +443,8 @@
   color: #e82626;
 }
 
+/* !MEDIA QUERY */
+
 /* 850 */
 @media  (max-width: 856px) {
   .div-one-titulo {
@@ -479,6 +483,7 @@
 
 }
 
+/* todo: AJUSTAR DIMENSÕES PARA O IPAD -> DIMENSÕES QUE TRABALHAM COM INTERVALOS */
 /* @media (min-width : 1438) and (max-width:1476){
   .div-one-titulo {
     margin-left: 60px;
