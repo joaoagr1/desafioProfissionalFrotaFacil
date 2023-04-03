@@ -103,6 +103,10 @@
   }
 
   /* Features */
+
+  .headline{
+    font-size: 1.5rem;
+  }
 #features-container {
   grid-template-columns: 1fr;
 }
