@@ -61,7 +61,7 @@
   }
 
 .div-one-titulo {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     margin-bottom: 10px;
     margin-left: -8px;
   
@@ -69,15 +69,15 @@
   }
   
   .div-one-titulo2 {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     margin-left:15px;
   }
   
   
   .conteudo-principal-escrito-botao {
     background-color: white;
-    width: 100px;
-    height: 30px;
+    width: 120px;
+    height: 40px;
     border: none;
     box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
     border-radius: 9px;
@@ -97,7 +97,7 @@
 
   .div-one-section2-img{
     
-    height: 90px;
+    height: 120px;
     /* justify-content: center; */
     /* margin-right: 100px; */
   }
