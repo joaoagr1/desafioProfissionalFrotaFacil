@@ -445,8 +445,9 @@
 
 /* !MEDIA QUERY */
 
-/* 850 */
-@media  (max-width: 856px) {
+/* 856 */
+/* !intervalo para ajuste para tablet -> agora com o min-width não tem interferência no mobile */
+@media (min-width:655px) and (max-width: 900px) {
   .div-one-titulo {
     font-size: 40px;
     margin-left: 20px;
