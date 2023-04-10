@@ -7,8 +7,6 @@ section{
 }
 .form-box{
     width: 80%;
-    margin-right: -20px;
-
 }
 
 .inputbox label{
@@ -17,11 +15,16 @@ section{
 }
 
 .inputbox input {
-    width: 100%;
+    
+    padding: 0px;
 }
 
 button{
     width: 80%;
-    margin-left: 30px;
-  
+    margin-left: 20px;
+
+}
+
+.senha{
+    margin-left: 25px;
 }
