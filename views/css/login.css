@@ -1,196 +1,125 @@
-.flex{
-    display: flex;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins',sans-serif;
 }
-main.flex{
-    width: 100%;
-    /* height: 100%; */
-    flex-direction: column;
+section{
+    display: flex;
     justify-content: center;
-    justify-items: center;
-    /* position: absolute; */
-    
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background: url('/views/img/fundo_login.jpeg')no-repeat;
+    background-position: center;
+    background-size: cover;
 }
-main.flex section.flex{
-  background-color: #fff;
-  /* margin: 30px 0px 30px 450px; */
-  align-content: center;
-  align-content: space-around;
-  width: 33%;
-  border: 2px solid black;
-  justify-content: center;
-  justify-items: center;
-  margin-top: 200px;
-  margin-left: 550px;
-  flex-direction: row;
-}
-main.flex section.flex form.flex{
-    flex-direction: column;
-    width: 400px;
-    margin-top: 100px;
-    margin: 50px auto;
-    /* border: 1px solid black; */
-    height: 320px;
-    align-content: space-around;
-    align-content: center;
-
-}
-main.flex form.flex input{
-    /* margin: 10px; */
-    width: 120%;
-}
-main.flex form.flex label{
-    margin-top: 10px;
-    margin-left: 2px;
-    font-family: var(--font_padrão);
-    color: #fff;
-}
-main.flex section.flex form.flex {
-    flex-direction: column;
-    width: 60%;
-    height: 80%;
-    margin-left: 60px;
-    margin-top: 10px;
+.form-box{
+    position: relative;
+    width: 40%;
+    height: 450px;
+    /* background: transparent; */
     background-color: #fff;
-}
-main.flex form.flex input#botao{
-    width: 73%;
-    background-color:#2196F3 ;
-    color: #fff;
-    border-radius:5px;
-    margin: 0 auto;
-    height: 32px;
-    box-shadow: 0px 3px 0px #0D47A1 ;
-    border: #fff;
-}
-main.flex form.flex input#botao:hover{
-    cursor: pointer;
-}
-#logo{
-    width: 120px;
-    height: 120px;
-}
-input{
-    padding-top: 10px;
-    margin-top: 20px;
-}
-input #cadastro{
-    width: 3px;
-
-}
-
-body {
-    font-family: Helvetica, Arial, sans-serif;
-    margin: 0 auto;
-    /* width: 30%; */
-    
-  }
-  
-  .container {
-    width: 100%;
-    /* display: block; */
-    margin-top: 100px;
-  }
-   
-  .input-label {
-    display: block;
-    font-size: 0.8rem;
-    margin: 20px 0 5px;
-  }
-  
-  .input-text {
-    color: black;
-    border: none;
-    border-bottom: 1px solid #b6b6b6;
-    font-size: 1rem;
-    margin: 2px 0 5px;
-    width: 100%;
-  }
-  
-  .input-text:focus-visible {
-    border: none;
-    border-bottom: 1px solid #333333;
-    outline: none;
-  }
-  
-  
-  .button {
-    background-color: #00c8b3;
-    border: none;
-    border-radius: 30px;
-    color: #fff;
-    font-weight: bold;
-    font-size: 1rem;
-    margin: 20px 0;
-    padding: 15px;
-    width: 100%;
-  }
-  
-  .button:hover {
-    opacity: 70%;
-    cursor: pointer;
-  }
-  
-  .button:disabled {
-    color: #dddcdc;
-    background-color: #f6f6f6;
-  }
-  .cabecalho{
-    background-color: rgb(18, 188, 137);
-    /* position: fixed;
-    top: auto; */
-    margin: auto;
-    right: auto;
-    width: 100%;
-    display: block;
-    height: 50px;
-    /* align-items: baseline; */
-    /* align-items: center ; */
-    padding: 30px; 
-
-
-
-
-  }
-  .cabecalho-imagem #logo{
-    height: 85px;
-    margin-left :400px;
-  }
-
-  .link{
-    color: #fff;
-  }
-  #esqueceu_senha{
-    color: #000;
-  }
-
-  #link_dif{
-    color: brown;
-  }
-
-
-  .menu{
-    font-family: 'Sarala', cursive;
-    font-weight: bolder;
-    
-    background-color: rgb(18, 188, 137);
-    position: fixed;
-    top: auto;
-    margin: auto;
-    right: auto;
-    width: 100%;
-    display: block;
-    align-items: baseline;
-    /* align-items: center ; */
-    padding: 30px; 
-    
-    
-}
-
-.menu-section{
-    align-items: baseline;
+    border: 2px solid rgba(255,255,255,0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+
+}
+h2{
+    font-size: 2em;
+    color: #000;
+    text-align: center;
+}
+.inputbox{
+    position: relative;
+    margin: 30px 0;
+    width: 100%;
+    border-bottom: 2px solid #000;
+}
+.inputbox label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    color: #000;
+    font-size: 1em;
+    pointer-events: none;
+    transition: .5s;
+}
+input:focus ~ label,
+input:valid ~ label{
+top: -5px;
+}
+.inputbox input {
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    padding:0 35px 0 5px;
+   color: black;
+}
+.inputbox ion-icon{
+    position: absolute;
+    right: 8px;
+   color: black;
+    font-size: 1.2em;
+    top: 20px;
+}
+.forget,.senha{
+    margin: -15px 0 15px ;
+    font-size: .9em;
+   color: black;
+    display: flex;
+    justify-content: space-between;  
+}
+
+.forget label input,.senha label input{
+    margin-right: 3px;
     
-    
-    
+}
+.forget label a, .senha label a {
+   color: black;
+    text-decoration: none;
+}
+.forget label a:hover, .senha label a:hover{
+    text-decoration: underline;
+}
+
+.senha{
+    margin-top: 40px;
+    margin-left: 43px;
+}
+button{
+    width: 100%;
+    height: 40px;
+    border-radius: 40px;
+    background: #3D65DB;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;
+    color: #fff;
+}
+button:active{
+    transform: scale(0.92);
+}
+.register{
+    font-size: .9em;
+    color: #000;
+    text-align: center;
+    margin: 25px 0 10px;
+}
+.register p a{
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+}
+.register p a:hover{
+    text-decoration: underline;
 }

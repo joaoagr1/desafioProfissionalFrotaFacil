@@ -1,7 +1,7 @@
 
 section{
     width: 100%;
-    background: url('fundo_login_mobile.jpeg')no-repeat;
+    background: url('/views/img/fundo_login_mobile.jpeg')no-repeat;
     background-position: center;
     background-size: cover;
 }
