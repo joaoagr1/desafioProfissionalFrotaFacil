@@ -1,0 +1,30 @@
+
+section{
+    width: 100%;
+    background: url('/views/img/fundo_login_mobile.jpeg')no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.form-box{
+    width: 80%;
+}
+
+.inputbox label{
+    transform: translateY(0%);
+    transition: 0s;
+}
+
+.inputbox input {
+    
+    padding: 0px;
+}
+
+button{
+    width: 80%;
+    margin-left: 20px;
+
+}
+
+.senha{
+    margin-left: 25px;
+}
