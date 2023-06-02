@@ -6,21 +6,20 @@
 }
 
 /* *NAVBAR */
-header {
- 
-}
+
 #navbar {
   width: 100%;
   color: #fff;
-  height: 5em;
+  height: 80px;
   position: fixed;
   transition: background-color 01s ease;
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
 }
-
- .scrolled {
-  background-color: rgb(18, 188, 137);
+.scrolled {
+  background: rgb(18, 188, 137);
 }
-
 #navbar-container {
   width: 80%;
   height: 100%;
@@ -28,13 +27,18 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* padding: 1.5em 0 1.5em 5em; */
 }
 
 #navbar-itens {
   display: flex;
   list-style: none;
   text-transform: uppercase;
+  width: 50%;
+  justify-content: left;
+  margin-left: 20%;
+}
+#navbar-img {
+  width: 50%;
 }
 
 #navbar-itens li {
@@ -47,7 +51,7 @@ header {
   height: 120px;
   width: auto;
   /* left: 30px; */
-  margin-left: -50px;
+  /* margin-left: -50px; */
 }
 
 /* *primeiro container */
