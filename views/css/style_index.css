@@ -100,7 +100,7 @@
 }
 
 /** BOTÃO  */
-.conteudo-principal-escrito-botao {
+/* .conteudo-principal-escrito-botao {
   background-color: white;
   width: 180px;
   height: 60px;
@@ -112,8 +112,8 @@
   font-size: 24px;
   color: #2F2325;
   margin-left: 100px;
-  margin-top: 300px;
-}
+  margin-top: 60px;
+} */
 
 .conteudo-principal-escrito-botao:hover {
   background-color: rgba(236, 214, 196, 0.53);
@@ -226,7 +226,7 @@
   font-size: 24px;
   color: #2F2325;
   margin-left: 500px;
-  margin-top: 80px;
+  margin-top: 40px;
 }
 
 .conteudo-principal-escrito-botao:hover {
