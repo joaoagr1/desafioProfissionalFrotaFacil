@@ -3,9 +3,12 @@
 }
 
 #logo{
-   margin-left: 6px;    
-   height: 90px;
-   margin-top: -15px
+   /* margin-left: 6px;     */
+   height: 120px;
+   /* margin-top: -15px */
+   align-items: center;
+   
+   
 }
 
 #navbar-container {
