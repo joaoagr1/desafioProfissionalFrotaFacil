@@ -15,25 +15,35 @@
 
 <body>
 
-    <header>
-        <nav id="navbar">
-            <!-- <div id="navbar-container">
-                
-            </div> -->
-            <!-- <h1><img src="/views/img/logo.png" alt="" id="logo"></h1> -->
-            <!-- <a href=""><img src="/views/img/logo.png" alt="" id="logo"></a> -->
-            <ul id="navbar-img">
-                  <a href=""><img src="/views/img/logo.png" alt="" id="logo"></a>
-            </ul>
-                <ul id="navbar-itens">
-                    <li>Contato</li>
-                    <li>Apresentação</li>
-                    <li>Diretrizes</li>
-                    <li>Comunidade</li>
-                </ul>
-        </nav>
-
+   <header id="header">
+        <div class="container">
+            <div class="subcontainer-img">
+                  <a href="" class="nav-branding"><img src="./views/img/logo.png" id="logo" alt="logo FrotaFácil"></a>
+            </div>
+            <div class="subcontainer">
+                <nav class="navbar">
+                  
+                    <ul class="nav-menu">
+                        <li class="nav-item">
+                            <a href="" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link">Contact</a>
+                        </li>
+                    </ul>
+                    <div class="hamburguer">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+                </nav>
+            </div>
+        </div>
     </header>
+
 
     <section id="container1">
         <div id="div-container1">
@@ -92,7 +102,7 @@
         </div>
     </section>
 
-    <footer id="footer" class="main_footer container">
+    <footer id="footer" class="main_footer">
 
         <div class="content">
 
@@ -151,6 +161,7 @@
 
     </footer>
     <script src="./scroll.js"></script>
+    <script src="./controler/hamburguer.js"></script>
     <script src="https://kit.fontawesome.com/1821731133.js" crossorigin="anonymous"></script>
 </body>
 
