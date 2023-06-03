@@ -80,7 +80,7 @@ a {
   /* width: 85%; */
   width: 50%;
   margin: auto;
-  margin-left: 50%;
+  margin-left: 30%;
 }
 
 .navbar {
@@ -94,10 +94,14 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 60px;
+  gap: 30px;
+  text-transform: uppercase
 }
 .nav-branding {
   font-size: 2rem;
+}
+.nav-link{
+  font-size:1.2rem
 }
 .hamburguer {
   display: none;
@@ -153,7 +157,7 @@ a {
 #logo {
   height: 120px;
   width: auto;
-  margin-left: 10%;
+  margin-left: 5%;
   margin-top: 13px;
 }
 /* *primeiro container */
@@ -166,6 +170,7 @@ a {
   /* justify-content: center;
     align-items: center; */
   color: #eee;
+  /* justify-content: center; */
 }
 
 #div-container1 {
@@ -174,17 +179,19 @@ a {
   margin-top: 120px;
   align-items: center;
   flex-direction: column;
-}
-.div-one-section2-img {
-  margin-top: 110px;
-  height: 60vh;
-  width: auto;
-  margin-left: 450px;
+  width: 50%;
 }
 #img-section1 {
   height: 0.8em;
   display: flex;
 }
+.div-one-section2-img {
+  margin-top: 110px;
+  height: 60vh;
+  width: auto;
+  margin-left: 40%;
+}
+
 .div-one-titulo {
   font-family: "Roboto", sans-serif;
   font-weight: bolder;
@@ -233,7 +240,26 @@ a {
 }
 
 /** import css TI SOLUTIONS */
+/* Clients */
+#clients {
+  width: 100%;
+  color: #111;
+  padding: 50px;
+}
+
+#clients-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+  padding: 15px;
+}
+
+.client {
+  display: inline-block;
+  width: 25%;
+}
 /* about */
+
 .headline {
   font-size: 2rem;
   text-transform: uppercase;
@@ -274,6 +300,9 @@ a {
   font-size: 1.5rem;
   font-weight: bold;
 }
+.text-feature-title{
+ font-size: 1.2rem;
+}
 
 #div-three {
   background-image: url(/views/img/fundo-div-two.png);
@@ -287,6 +316,122 @@ a {
   display: flex;
   flex-direction: column; */
 }
+/* Testimonials */
+.testimonial {
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+  background: #333;
+  padding: 15px;
+  margin: 15px 0;
+  border-radius: 5px;
+}
+
+#testimonials {
+  width: 100%;
+  background: #222;
+  color: #eee;
+  padding: 50px;
+}
+
+#testimonials-container {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.testimonial .testimonial-image {
+  height: 200px;
+  width: auto;
+  border-radius: 50%;
+  margin: 15px;
+}
+
+.box-artigo   { width:100%; float:left; background:#fff; padding:1em; }
+
+/*Formulario*/
+
+.formulario {
+
+  max-width: 650px;
+  text-align: center;
+  margin: 20px auto;
+
+}
+
+.formulario input, form textarea {
+
+  border: 0;
+  outline: 0;
+  padding: 0.8em;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
+  display: block;
+  width: 100%;
+  margin-top: 16px;
+  font-family:'open_sansregular';
+  font-size:16px;
+  color:#424242;
+  -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  resize: none;
+}
+
+.formulario input:focus, .formulario textarea:focus {
+   
+  color:#3cafe7; 
+  -moz-box-shadow: 0 0px 2px #3cafe7 !important;
+  -webkit-box-shadow: 0 0px 2px #3cafe7 !important;
+  box-shadow: 0 0px 2px #3cafe7 !important;
+
+}
+
+.formulario .btn-submit {
+
+  color: #fff;
+  background: #3cafe7 ;
+  cursor: pointer;
+  transition: 0.5s;
+
+}
+
+.formulario .btn-submit:hover {
+ 
+  background-color:#424242;
+  -moz-box-shadow: 0 1px 1px 1px rgba(170, 170, 170, 0.6);
+  -webkit-box-shadow: 0 1px 1px 1px rgba(170, 170, 170, 0.6);
+  box-shadow: 0 1px 1px 1px rgba(170, 170, 170, 0.6);
+
+}
+
+.formulario textarea {
+
+  height: 174px;
+
+}
+
+.metade {
+
+  float: left;
+  width: 48%;
+  margin-bottom: 1em;
+
+}
+
+.right { width:50%;}
+
+.left  { margin-right:2%; }
+
+@media (max-width: 768px) {
+  
+  .metade { width:100%; float:none; margin-bottom:0; }
+
+}
+/*Formulario*/
 
 /** estilização do footer  */
 
