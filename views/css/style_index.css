@@ -351,8 +351,22 @@ a {
   margin: 15px;
 }
 
-.box-artigo   { width:100%; float:left; background:#e0c6c6; padding:1em; }
+.box-artigo{ width:100%;
+   float:left; 
+   background:#e0c6c6; 
+   padding:1em;
+  display: flex; 
+  align-items: center;
+}
 
+#box-img{
+  width: 50%;
+}
+
+#box-formulario{
+  width: 50%;
+  margin-left: -7%;
+}
 /*Formulario*/
 
 .formulario {

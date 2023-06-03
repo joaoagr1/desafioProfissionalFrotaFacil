@@ -3,6 +3,10 @@ var registeredUsers = {
     2223 : {
       username :'2223',
       password: '123'
+    },
+    511712 : {
+    username : '511712',
+    password : 'vini123'
     }
   };
   var contErro = 0;
