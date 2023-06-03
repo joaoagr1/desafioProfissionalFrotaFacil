@@ -101,7 +101,7 @@ a {
   font-size: 2rem;
 }
 .nav-link{
-  font-size:1.2rem
+  font-size:1.2rem;
 }
 .hamburguer {
   display: none;
@@ -195,8 +195,8 @@ a {
 .div-one-titulo {
   font-family: "Roboto", sans-serif;
   font-weight: bolder;
-  font-size: 70px;
-  margin-bottom: 33px;
+  font-size: 3.5rem;
+  margin-bottom: 2%;
 
   /* margin-top: 50px; */
   /* text-shadow: black 0.1em 0.1em 0.1em */
@@ -205,7 +205,7 @@ a {
 .div-one-titulo2 {
   font-family: "Roboto", sans-serif;
   font-weight: bolder;
-  font-size: 55px;
+  font-size: 2.8em;
   margin-bottom: 5px;
   margin-left: 40px;
 }
@@ -294,6 +294,7 @@ a {
   padding: 20px;
   border-radius: 5px;
   margin-top: 20px;
+  box-shadow:  5px 8px 6px 1px rgba(0,0,0,0.4);
 }
 
 .feature-title {
@@ -325,11 +326,12 @@ a {
   padding: 15px;
   margin: 15px 0;
   border-radius: 5px;
+  box-shadow:  5px 8px 6px 1px rgba(0,0,0,0.4);
 }
 
 #testimonials {
   width: 100%;
-  background: #222;
+  /* background: #222; */
   color: #eee;
   padding: 50px;
 }
@@ -349,7 +351,7 @@ a {
   margin: 15px;
 }
 
-.box-artigo   { width:100%; float:left; background:#fff; padding:1em; }
+.box-artigo   { width:100%; float:left; background:#e0c6c6; padding:1em; }
 
 /*Formulario*/
 
@@ -464,8 +466,8 @@ a {
 
 .conteudo-principal-escrito-botao {
   background-color: white;
-  width: 180px;
-  height: 60px;
+  width: 8em;
+  height: 2.5em;
   border: none;
   box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
   border-radius: 20px;
@@ -474,7 +476,7 @@ a {
   font-size: 24px;
   color: #2f2325;
   /* margin-left: 500px; */
-  /* margin-top: 40px; */
+  margin-top: 12vh;
 }
 
 .conteudo-principal-escrito-botao:hover {
@@ -707,9 +709,22 @@ a {
     margin-left: 100px;
   }
   .conteudo-principal-escrito-botao {
-    /* margin-top: 25px; */
+    
   }
 }
+/* only screen and */
+@media (min-width:1580px){
+  .div-one-titulo{
+    font-size: 3rem;
+  }
+}
+/* 1025px — 1200px */
+/* @media (min-width:1025px) and (max-width:1200px){
+
+.div-one-titulo{
+    font-size: 3rem;
+  }
+} */
 
 /* todo: AJUSTAR DIMENSÕES PARA O IPAD -> DIMENSÕES QUE TRABALHAM COM INTERVALOS */
 /* @media (min-width : 1438) and (max-width:1476){
