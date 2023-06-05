@@ -123,3 +123,12 @@ button:active{
 .register p a:hover{
     text-decoration: underline;
 }
+
+li{
+    color: red;
+    list-style: none;
+}
+
+.test{
+    display: none;
+}
