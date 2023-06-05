@@ -1,222 +1,294 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="././views/css/style_index.css" />
+    <link rel="stylesheet" media="screen and (max-width:655px)" href="/views/css/index_mobile.css"/>
+    <link rel="Website Icon" href="./views/img/logoInteira.png" />
+    <title>FrotaFácil</title>
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/views/css/style_index.css">
-    <!-- *antiga dimensão do mobile -->
-    <!-- <link rel="stylesheet" media="screen and (max-width:768px)" href="responsivo_mobile.css"> -->
-    <link rel="stylesheet" media="screen and (max-width:655px)" href="/views/css/index_mobile.css">
-    <link rel="Website Icon" href="/views/img/logoInteira.png">
-    <title>Frota Fácil</title>
-</head>
-
-<body>
-
-   <header id="header">
-        <div class="container">
-            <div class="subcontainer-img">
-                  <a href="" class="nav-branding"><img src="./views/img/logo.png" id="logo" alt="logo FrotaFácil"></a>
-            </div>
-            <div class="subcontainer">
-                <nav class="navbar">
-                  
-                    <ul class="nav-menu">
-                        <li class="nav-item">
-                            <a href="" class="nav-link">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="" class="nav-link">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="" class="nav-link">Contact</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="./pages/login.html" class="nav-link">Login</a>
-                        </li>
-                    </ul>
-                    <div class="hamburguer">
-                        <span class="bar"></span>
-                        <span class="bar"></span>
-                        <span class="bar"></span>
-                    </div>
-                </nav>
-            </div>
+  <body>
+    <header id="header">
+      <div class="container">
+        <div class="subcontainer-img">
+          <a href="" class="nav-branding"
+            ><img src="./views/img/logo.png" id="logo" alt="logo FrotaFácil"
+          /></a>
         </div>
+        <div class="subcontainer">
+          <nav class="navbar">
+            <ul class="nav-menu">
+              <li class="nav-item">
+                <a href="#container1" class="nav-link">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a href="#features" class="nav-link">Sobre</a>
+              </li>
+              <li class="nav-item">
+                <a href="#box-img" class="nav-link">Contato</a>
+              </li>
+              <li class="nav-item">
+                <a href="./pages/login.html" class="nav-link">Login</a>
+              </li>
+            </ul>
+            <div class="hamburguer">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+            </div>
+          </nav>
+        </div>
+      </div>
     </header>
 
     <main>
-    <section id="container1">
+      <section id="container1">
         <div id="div-container1">
-            <h1 class="div-one-titulo">NÃO GERENCIE <br>SUA FROTA!</h1>
-            <h2 class="div-one-titulo2">Deixe que o FrotaFácil <br> faça isso por você!</h2>
-            <a href="#serviços"><button class="conteudo-principal-escrito-botao"> Saiba Mais</button></a>
+          <h1 class="div-one-titulo">NÃO GERENCIE <br />SUA FROTA!</h1>
+          <h2 class="div-one-titulo2">
+            Deixe que o FrotaFácil <br />
+            faça isso por você!
+          </h2>
+          <a href="#features"
+            ><button class="conteudo-principal-escrito-botao">
+              Saiba Mais
+            </button></a
+          >
         </div>
         <div id="img-section1">
-            <img class="div-one-section2-img" src="./views/img/165-removebg-preview.png">
+          <img
+            class="div-one-section2-img"
+            src="./views/img/container-inical.png"
+          />
         </div>
-    </section>
+      </section>
 
-
-    <section id="features">
+      <section id="features">
         <div class="headline">O que faremos por você</div>
         <div id="features-container">
-            <div class="feature">
-                <i class="fa-solid fa-gas-pump fa-3x"></i>
-                <span class="feature-title"></span>
-                <p class="text-feature-title">Gerencia de gastos com combústivel e relação distância/custo para melhor optimização de rotas.</p>
-            </div>
-            <div class="feature">
-                <i class="fa-solid fa-location-dot fa-3x"></i>
-                <span class="feature-title"></span>
-                <p class="text-feature-title">Integração com Goolge Maps permite fiscalização de regiões e rotas percorridas pelos seus veículos.
-                </p>
-            </div>
-            <div class="feature">
-                <i class="fa-regular fa-calendar fa-3x"></i>
-                <span class="feature-title"></span>
-                <p class="text-feature-title">Calendário integrado para marcar todos seus eventos importantes.</p>
-            </div>
-            <div class="feature">
-                <i class="fa-solid fa-database fa-3x"></i>
-                <span class="feature-title"></span>
-                <p class="text-feature-title">Todos os seus dados em um único ambiente de forma simples e clara.</p>
-            </div>
-            <div class="feature">
-                <i class="fa-solid fa-square-check fa-3x"></i>
-                <span class="feature-title"></span>
-                <p class="text-feature-title">Checklist de todas as viagens da sua frota.</p>
-            </div>
-            <div class="feature">
-                <i class="fas fa-layer-group fa-3x"></i>
-                <span class="feature-title"></span>
-                <p class="text-feature-title">Garante o controle total do gerenciamento da sua frota, com planilhas e relatórios.</p>
-            </div>
+          <div class="feature">
+            <i class="fa-solid fa-gas-pump fa-3x"></i>
+            <span class="feature-title"></span>
+            <p class="text-feature-title">
+              Gerencia de gastos com combústivel e relação distância/custo para
+              melhor optimização de rotas.
+            </p>
+          </div>
+          <div class="feature">
+            <i class="fa-solid fa-location-dot fa-3x"></i>
+            <span class="feature-title"></span>
+            <p class="text-feature-title">
+              Integração com Goolge Maps permite fiscalização de regiões e rotas
+              percorridas pelos seus veículos.
+            </p>
+          </div>
+          <div class="feature">
+            <i class="fa-regular fa-calendar fa-3x"></i>
+            <span class="feature-title"></span>
+            <p class="text-feature-title">
+              Calendário integrado para marcar todos seus eventos importantes.
+            </p>
+          </div>
+          <div class="feature">
+            <i class="fa-solid fa-database fa-3x"></i>
+            <span class="feature-title"></span>
+            <p class="text-feature-title">
+              Todos os seus dados em um único ambiente de forma simples e clara.
+            </p>
+          </div>
+          <div class="feature">
+            <i class="fa-solid fa-square-check fa-3x"></i>
+            <span class="feature-title"></span>
+            <p class="text-feature-title">
+              Checklist de todas as viagens da sua frota.
+            </p>
+          </div>
+          <div class="feature">
+            <i class="fas fa-layer-group fa-3x"></i>
+            <span class="feature-title"></span>
+            <p class="text-feature-title">
+              Garante o controle total do gerenciamento da sua frota, com
+              planilhas e relatórios.
+            </p>
+          </div>
         </div>
-    </section>
-    <!-- About -->
-    <section id="clients">
+      </section>
+
+      <!-- About -->
+      <section id="clients">
         <div class="headline">Nossos clientes</div>
         <div id="clients-container">
-            <img src="./views/img/netflix.png" class="client" alt="">
-            <img src="./views/img/apple.png" class="client" alt="">
-            <img src="./views/img/google.png" class="client" alt="">
-            <img src="./views/img/microsoft.png" class="client" alt="">
+          <img src="./views/img/maringa.png" class="client" alt="" />
+          <img src="./views/img/salvador.jfif" class="client" alt="" />
+          <img src="./views/img/g10.jfif" class="client" alt="" />
+          <img
+            src="./views/img/confianca.png"
+            class="client"
+            id="confianca"
+            alt=""
+          />
         </div>
-    </section>
+      </section>
 
-    <!-- <section id="container3">
-        <div id="div-three" class="div-three">
-
-        </div>
-    </section> -->
-    <div id="testimonials">
+      <div id="testimonials">
         <div class="headline">O que acham de nós</div>
         <div id="testimonials-container">
-            <div class="testimonial">
-                <img src="./views/img/person-1.jpeg" alt="" class="testimonial-image">
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni, autem dolores dolorum cumque
-                    voluptas eius. Eum quisquam illum error sapiente?</p>
+          <div class="testimonial">
+            <img
+              src="./views/img/secretario.jpg"
+              alt=""
+              class="testimonial-image"
+            />
+            <div class="testimonial-text">
+              <h3 class="testimonial-text-name">Luiz Carlos</h3>
+              <h4 class="testimonial-text-cargo">
+                Secretário Complice e Controle (Salvador)
+              </h4>
+              <p>
+                O FrotaFácil contribuiu para a eficácia de prestação de contas
+                da frota de Salvador, a quantidade e precisão de dados
+                armazenados somados possibilidade de relatórios transformaram a
+                transparência de diversos setores de nossa prefeitura.
+              </p>
             </div>
-            <div class="testimonial">
-                <img src="./views/img/person-2.jpeg" alt="" class="testimonial-image">
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni, autem dolores dolorum cumque
-                    voluptas
-                    eius. Eum quisquam illum error sapiente?</p>
+          </div>
+          <div class="testimonial">
+            <img
+              src="./views/img/qual-a-melhor-pós-graduação-em-Administração_cropped.jpg"
+              alt=""
+              class="testimonial-image"
+            />
+            <div class="testimonial-text">
+              <h3 class="testimonial-text-name">Alessandra Teles</h3>
+              <h4 class="testimonial-text-cargo">
+                Contadora Transportadora Confiança
+              </h4>
+              <p>
+                Com os checklists gerados a cada viagem e o módulo finânceiro, após 3 meses da implemetação do sistema conseguimos reduzir nossos gastos com 
+                a frota em 22% no último semestre.
+              </p>
             </div>
+          </div>
+          <div class="testimonial">
+            <img
+              src="./views/img/motoristaG10.png"
+              alt=""
+              class="testimonial-image"
+            />
+            <div class="testimonial-text">
+              <h3 class="testimonial-text-name">Maurício Fonseca</h3>
+              <h4 class="testimonial-text-cargo">Motorista G10</h4>
+              <p>
+                Nós como motoristas tinhamos algumas ressalvas a implemetação do
+                sistema, entretando após a adaptação e uso continuo, facilitou a
+                nossa vida em toda a parte de comunicação e devolutivas, além de
+                beneficiar a nossa segurança com os rastreadores.
+              </p>
+            </div>
+          </div>
         </div>
-    </div>
+      </div>
 
-    <!-- Formulário -->
-    <div class="box-artigo">
-        <!-- <div class="headline">Entre em contato com a gente</div> -->
+      <!-- Formulário -->
+      <div class="headline">Entre em contato com a gente</div>
+      <div class="box-artigo">
         <div id="box-img">
-            <img src="./views/img/6306480-removebg-preview.png "alt="">
+          <img src="./views/img/contato.png" alt="" />
         </div>
         <div id="box-formulario">
-        <form class="formulario" method="post" action="#">
-          
-          <div class="metade left">
-        
-            <input type="text" placeholder="Nome" required="">
-            <input type="email" placeholder="E-mail" required="">
-            <input type="text" placeholder="Assunto" required="">
-        
-          </div>
-        
-          <div class="metade right">
-            <textarea name="mensagem" type="text" placeholder="Mesagem" required=""></textarea>
-          </div>  
-        
-          <input type="submit" value="Enviar Dados" class="btn-submit">
-        
-        </form>
-    </div>
-    </div><!--Box Artigo-->
-</main>
+          <form class="formulario" method="post" action="#">
+            <div class="metade left">
+              <input type="text" placeholder="Nome" required="" />
+              <input type="email" placeholder="E-mail" required="" />
+              <input type="text" placeholder="Assunto" required="" />
+            </div>
+
+            <div class="metade right">
+              <textarea
+                name="mensagem"
+                type="text"
+                placeholder="Mesagem"
+                required=""
+              ></textarea>
+            </div>
+
+            <input type="submit" value="Enviar Dados" class="btn-submit" />
+          </form>
+        </div>
+      </div>
+      <!--Box Artigo-->
+    </main>
     <footer id="footer" class="main_footer">
+      <div class="content">
+        <div class="colfooter">
+          <h3 class="titleFooter">Menu</h3>
 
-        <div class="content">
-
-            <div class="colfooter">
-
-                <h3 class="titleFooter"> Menu</h3>
-
-                <ul>
-
-                    <li><a href="#" title="Página Inícial">Página Inícial</a></li>
-                    <li><a href="#" title="Sobre a Empresa">Sobre a Empresa</a></li>
-                    <li><a href="#" title="Galeria de Fotos">Galeria de Fotos</a></li>
-                    <li><a href="#" title="Fale Conosco">Fale Conosco</a></li>
-
-                </ul>
-
-            </div>
-
-          
-
-            <div class="colfooter">
-
-                <h3 class="titleFooter"> Contato</h3>
-                <p><i class="icon icon-mail"></i> contato@seusite.com.br</p>
-                <p><i class="icon icon-phone"></i> 21 90000-0000</p>
-                <p><i class="icon icon-whatsapp"></i> 21 90000-0000</p>
-
-            </div>
-
-            <div class="colfooter">
-
-                <h3 class="titleFooter"> Redes Sociais</h3>
-
-                <a href="#" class="botao"><span> <i class="icon icon-facebook"></i> </span></a>
-                <a href="#" class="botao"><span> <i class="icon icon-instagram"></i> </span></a>
-                <a href="#" class="botao"><span> <i class="icon icon-twitter"></i> </span></a>
-                <a href="#" class="botao"><span> <i class="icon icon-pinterest"></i> </span></a>
-
-            </div>
-
-          
-
-            <div class="clear"></div>
-
+          <ul>
+            <li><a href="#" title="Página Inícial">Página Inícial</a></li>
+            <li><a href="#" title="Sobre a Empresa">Sobre a Empresa</a></li>
+            <li><a href="#" title="Galeria de Fotos">Galeria de Fotos</a></li>
+            <li><a href="#" title="Fale Conosco">Fale Conosco</a></li>
+          </ul>
         </div>
 
-        <div class="main_footer_copy">
-
-            <p class="m-b-footer"> FrotaFácil - 2023, todos os direitos reservados.</p>
-            <p class="by"><i class="icon icon-heart-3"></i> Desenvolvido por: <a href="#" title="Seu nome">João Rolo</a>
-                e
-                <a href="#" title="Seu nome">Vinicius Vilela</a>
-            </p>
-
+        <div class="colfooter">
+          <h3 class="titleFooter">Contato</h3>
+          <p><i class="icon icon-mail"></i> contato@seusite.com.br</p>
+          <p><i class="icon icon-phone"></i> 21 90000-0000</p>
+          <p><i class="icon icon-whatsapp"></i> 21 90000-0000</p>
         </div>
 
+        <div class="colfooter">
+          <h3 class="titleFooter">Redes Sociais</h3>
+
+          <a href="#" class="botao"
+            ><span> <i class="icon icon-facebook"></i> </span
+          ></a>
+          <a href="#" class="botao"
+            ><span> <i class="icon icon-instagram"></i> </span
+          ></a>
+          <a href="#" class="botao"
+            ><span> <i class="icon icon-twitter"></i> </span
+          ></a>
+          <a href="#" class="botao"
+            ><span> <i class="icon icon-pinterest"></i> </span
+          ></a>
+        </div>
+
+        <div class="clear"></div>
+      </div>
+
+      <div class="main_footer_copy">
+        <p class="m-b-footer">
+          FrotaFácil - 2023, todos os direitos reservados.
+        </p>
+        <p class="by">
+          <i class="icon icon-heart-3"></i> Desenvolvido por:
+          <a href="#" title="Seu nome">João Rolo</a>
+          e
+          <a href="#" title="Seu nome">Vinicius Vilela</a>
+        </p>
+      </div>
     </footer>
-    <script src="./scroll.js"></script>
-    <script src="./controler/hamburguer.js"></script>
-    <script src="https://kit.fontawesome.com/1821731133.js" crossorigin="anonymous"></script>
-</body>
-
+    <!-- NAVBAR SCROLL -->
+    <script src="././script/scroll.js"></script>
+    <!-- HAMBURGUER MENU MOBILE -->
+    <script src="././script//hamburguer.js"></script>
+    <!-- jQuery CDN -->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <!-- SMOOTH SCROLLING -->
+    <script src="././script//scrolling.js"></script>
+    <!-- ICONS -->
+    <script
+      src="https://kit.fontawesome.com/1821731133.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
