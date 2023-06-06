@@ -2,6 +2,7 @@
 <html lang="pt-br">
 <head>
   <link rel="stylesheet" href="../views/css/login.css">
+  <link rel="stylesheet" href="../views/css/sweetalert2.min.css">
   <link rel="stylesheet" media="screen and (max-width:655px)" href="../views/css/login_mobile.css">
   <link rel="Website Icon" href="/views/img/logoInteira.png">
   <title>Login - FrotaFácilL</title>
@@ -27,12 +28,12 @@
                       
                     </div>
                     <ul id="mensagem-erro">
-                        <li class="test">Matrícula e/ou Senha inválidas</li>
-                        <li class="test">2 tentativas restantes</li>
+                        <li id="li-mensagem" class="test">Matrícula e/ou Senha inválidas</li>
+                        <!-- <li class="test">2 tentativas restantes</li> -->
                     </ul>
                     <button id="send">Entrar</button>
                     <div class="senha" id="senha">
-                        <label for=""><a href="#">Esqueci minha senha</a></label>
+                        <label for=""><a href="./recuperarSenha.html">Esqueci minha senha</a></label>
                       
                     </div>
                     <!-- <div class="register">
@@ -47,5 +48,6 @@
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="../script/login.js"></script>
+    <script src="../script/sweetalert2.all.min.js"></script>
 </body>
 </html>

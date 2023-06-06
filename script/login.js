@@ -9,7 +9,7 @@ var registeredUsers = {
     password: "vini123",
   },
 };
-var contErro = 0;
+var contErro = 3;
 let erro = [];
 let ul = document.querySelector("#campo-erros");
 
@@ -29,18 +29,11 @@ document
       showMessage("Login realizado com sucesso.");
       window.open("./logado.html");
     } else if (!checkCredentials(username, password)) {
-      // console.log("Errou");
-      // erro.push("Matrícula e/ou senha inválidas");
-      // erro.push(`Tentativas restantes ${contErro}`);
-      // console.log(erro);
-      // exibeErro(erro);
-      // contErro++;
-      let lis = document.querySelectorAll("li");
-      lis.classList.remove("test");
-      
+      contErro--;
+      mensagemErro();
     }
 
-    if (contErro == 3) {
+    if (contErro == 0) {
       alert("teste");
       contErro == 0;
       reloadPage();
@@ -53,32 +46,18 @@ function checkCredentials(username, password) {
   return user && user.password === password;
 }
 
-//*CAPTURA ERROS
-// function validaCampos() {
-
-//   erro.push("Matrícula e/ou senha inválidas")
-//   erro.push(`Tentativas restantes ${contErro}`)
-
-//   return erro;
-// }
-
-function exibeErro() {
-  ul.innerHTML = "";
-  // erros.forEach((el) => {
-  let li = document.createElement("li");
-  li.textContent = erro[0];
-  ul.appendChild(li);
-  let li2 = document.createElement("li");
-  li2.textContent = erro[1];
-  ul.appendChild(li2);
-    // });
-  // }
-}
-
 function showMessage(message) {
   document.getElementById("message").innerHTML = message;
 }
 
 function reloadPage() {
   location.reload();
+}
+
+function mensagemErro() {
+  Swal.fire(
+    "Credenciais Inválidas",
+    `Tentativas restantes ${contErro}`,
+    "error"
+  );
 }
