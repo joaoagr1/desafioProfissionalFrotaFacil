@@ -2,9 +2,11 @@ document
   .getElementById("loginForm")
   .addEventListener("submit", function (event) {
     event.preventDefault();
-    Swal.fire(
-        'Nova senha enviada!',
-        'You clicked the button!',
-        'success'
-      )
+    
+    Swal.fire({
+      icon : 'success',
+      title: 'Senha Enviada!',
+      text: 'Nova senha enviada por email',
+      footer: '<a href="../pages/login.html">Retornar a tela de login</a>'
+    })
   });
