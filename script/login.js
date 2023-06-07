@@ -3,15 +3,18 @@ var registeredUsers = {
   2223: {
     username: "2223",
     password: "123",
+    tipoColaborador : 2
   },
   511712: {
     username: "511712",
     password: "vini123",
+    tipoColaborador : 1
   },
 };
 var contErro = 3;
 let erro = [];
 let ul = document.querySelector("#campo-erros");
+let tipoUser = 0;
 
 console.log(registeredUsers);
 
@@ -25,12 +28,20 @@ document
 
     // Verifica se o login e a senha correspondem a um usuário válido
 
-    if (checkCredentials(username, password)) {
+    if (checkCredentials(username, password,tipoUser)) {
       showMessage("Login realizado com sucesso.");
+      
+      // if(tipo > 1) {
+      //   window.open("./logado.html");
+      // } else {
+      //   window.open("./admlogado.html")
+      // }
       window.open("./logado.html");
+      console.log(`Tipo de usuário ${tipoUser}`);
     } else if (!checkCredentials(username, password)) {
       contErro--;
       mensagemErro();
+
     }
 
     if (contErro == 0) {
@@ -39,10 +50,13 @@ document
     }
   });
 
-function checkCredentials(username, password) {
+function checkCredentials(username, password, tipoUser) {
   // Verifica se o login e a senha correspon dem a um usuário válido
   var user = registeredUsers[username];
-  return user && user.password === password;
+  var tipo = user.tipoColaborador;
+  tipoUser = tipo;
+  // console.log(`Tipo de usuário ${tipo}`);
+  return user && tipoUser &&  user.password === password;
 }
 
 function showMessage(message) {
