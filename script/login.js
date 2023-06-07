@@ -30,14 +30,20 @@ document
 
     if (checkCredentials(username, password,tipoUser)) {
       showMessage("Login realizado com sucesso.");
-      
+      console.log(username);
+      if(registeredUsers[username].tipoColaborador > 1) {
+        window.open("./logado.html");
+      }
+      else {
+        window.open("./inicialAdm.html");
+      }
       // if(tipo > 1) {
       //   window.open("./logado.html");
       // } else {
       //   window.open("./admlogado.html")
       // }
-      window.open("./logado.html");
-      console.log(`Tipo de usuário ${tipoUser}`);
+     
+      //console.log(`Tipo de usuário ${tipoUser}`);
     } else if (!checkCredentials(username, password)) {
       contErro--;
       mensagemErro();
