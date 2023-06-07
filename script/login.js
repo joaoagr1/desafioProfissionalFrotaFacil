@@ -34,9 +34,8 @@ document
     }
 
     if (contErro == 0) {
-      alert("teste");
-      contErro == 0;
-      reloadPage();
+      mensagemLimiteTentativas();
+      contErro = 3;
     }
   });
 
@@ -60,4 +59,30 @@ function mensagemErro() {
     `Tentativas restantes ${contErro}`,
     "error"
   );
+}
+
+function mensagemLimiteTentativas() {
+  let timerInterval;
+      
+      Swal.fire({
+        icon: "warning",
+        title: "Número de tentativas atingido!",
+        html: "Aguarde <strong></strong> segundos para tentar novamente.",
+        timer: 100000,
+        didOpen: () => {
+          const content = Swal.getHtmlContainer();
+          const $ = content.querySelector.bind(content);
+
+          Swal.showLoading();
+
+          timerInterval = setInterval(() => {
+            Swal.getHtmlContainer().querySelector("strong").textContent = (
+              Swal.getTimerLeft() / 1000
+            ).toFixed(0);
+          }, 100);
+        },
+        willClose: () => {
+          clearInterval(timerInterval);
+        },
+      });
 }
