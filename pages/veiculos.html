@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Veículos - FrotaFacil</title>
+    <!-- <link rel="icon" href="favicon.ico" type="image/x-icon" /> -->
+    <!-- <link rel="stylesheet" type="text/css" href="css/reset.css" /> -->
+    <link rel="stylesheet" type="text/css" href="../views/css/veiculos.css" />
+  </head>
+  <body>
+    <!-- <header>
+      <div class="container">
+        <h1>Veículos</h1>
+      </div>
+    </header> -->
+    <header>
+        <div class="left">
+          <h3>FrotaFácil</h3>
+        </div>
+        <div class="right">
+          <p class="text-right">EMP: PMM</p>
+          <p class="text-right">SECT: IPPLAM</p>
+        </div>
+      </header>
+      <!-- <main> -->
+        <div class="sidebar">
+          <div class="identificacao-user">
+            <img src="../views/img/teste_perfil-removebg-preview.png" alt="" />
+            <h2>Adm</h2>
+          </div>
+          <a href="./veiculos.html"
+            ><ion-icon name="car-outline"></ion-icon><span>Veículos</span></a
+          >
+          <a href="./colaboradores.html"
+            ><ion-icon name="people-outline"></ion-icon
+            ><span>Colaboradores</span></a
+          >
+          <a href="#"
+            ><ion-icon name="card-outline"></ion-icon><span>Contas</span></a
+          >
+          <a href="#"
+            ><ion-icon name="calendar-outline"></ion-icon
+            ><span>Calendário</span></a
+          >
+          <a href="#"
+            ><ion-icon name="settings-outline"></ion-icon
+            ><span>Configuração</span></a
+          >
+          <a href="./login.html"
+            ><ion-icon name="log-out-outline"></ion-icon><span>Sair</span></a
+          >
+        </div>
+    <!-- <main> -->
+      <section class="container">
+        <!-- <h2>Meus pacientes</h2> -->
+        <label for="">Filtro</label>
+        <input type="text" name="filtro" id="filtrar-tabela" placeholder="Digite o nome do paciente">
+        <table>
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Nome</th>
+              <th>Placa</th>
+              <th>Cor</th>
+              <th>Status</th>
+              <th>Ano</th>
+              <th>Data revisão</th>
+              <th>Último Uso</th>
+            </tr>
+          </thead>
+          <tbody id="tabela-pacientes">
+            <tr class="paciente" id="primeiro-paciente">
+              <td class="info-nome" >001</td>
+              <td class="info-peso">Gol 1.0 </td>
+              <td class="info-altura">RGH-7865</td>
+              <td class="info-gordura">Branco</td>
+              <td class="info-imc">Em uso</td>
+              <td class="info-imc">2012</td>
+              <td class="info-imc">17/02/2021</td>
+              <td class="info-imc">Pago</td>
+            </tr>
+
+            <tr class="paciente">
+              <td class="info-nome">002</td>
+              <td class="info-peso">Chevolet Classic 1.6</td>
+              <td class="info-altura">PLO-4456</td>
+              <td class="info-gordura">Branco</td>
+              <td class="info-imc">Parado</td>
+              <td class="info-imc">2015</td>
+              <td class="info-imc">15/02/2020</td>
+              <td class="info-imc">14/06/2023</td>
+            </tr>
+            <tr class="paciente">
+              <td class="info-nome">002</td>
+              <td class="info-peso">Chevolet Classic 1.6</td>
+              <td class="info-altura">PLO-4456</td>
+              <td class="info-gordura">Branco</td>
+              <td class="info-imc">Parado</td>
+              <td class="info-imc">2015</td>
+              <td class="info-imc">15/02/2020</td>
+              <td class="info-imc">14/06/2023</td>
+            </tr>
+            <tr class="paciente">
+              <td class="info-nome">002</td>
+              <td class="info-peso">Chevolet Classic 1.6</td>
+              <td class="info-altura">PLO-4456</td>
+              <td class="info-gordura">Branco</td>
+              <td class="info-imc">Parado</td>
+              <td class="info-imc">2015</td>
+              <td class="info-imc">15/02/2020</td>
+              <td class="info-imc">14/06/2023</td>
+            </tr>
+            
+           
+
+          </tbody>
+        </table>
+        <span id="erro-ajax" class="invisivel">Erro ao buscar os pacientes</span>
+        <button id="buscar-paciente" class="botao bto-principal">Importar</button>
+      </section>
+    </div>
+    <!-- </main> -->
+    <!-- <section class="container">
+      <h2 id="titulo-form">Adicionar novo paciente</h2>
+      <ul id="mensagem-erro"></ul>
+      <form id="form-adiciona">
+          <div class="">
+              <label for="nome">Nome:</label>
+              <input id="nome" name="nome" type="text" placeholder="digite o nome do seu paciente" class="campo">
+          </div>
+          <div class="grupo">
+              <label for="peso">Peso:</label>
+              <input id="peso" name="peso" type="text" placeholder="digite o peso do seu paciente" class="campo campo-medio">
+          </div>
+          <div class="grupo">
+              <label for="altura">Altura:</label>
+              <input id="altura" name="altura" type="text" placeholder="digite a altura do seu paciente" class="campo campo-medio">
+          </div>
+          <div class="grupo">
+              <label for="gordura">% de Gordura:</label>
+              <input id="gordura" name="gordura" type="text" placeholder="digite a porcentagem de gordura do seu paciente" class="campo campo-medio">
+          </div>
+  
+          <button id="adicionar-paciente" class="botao bto-principal">Adicionar</button>
+      </form>
+  </section> -->
+    <!-- importação JS -->
+    <script src="js/calculaImc.js"></script>
+    <script src="js/form.js"></script>
+    <script src="js/remover.js"></script>
+    <script src="js/filtro.js"></script>
+    <script src="js/buscar-pacientes.js"></script>
+  </body> 
+</html>

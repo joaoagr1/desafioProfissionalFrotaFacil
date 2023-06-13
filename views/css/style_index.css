@@ -111,9 +111,11 @@ a {
     gap: 0;
     flex-direction: column;
     background-color: rgb(18, 188, 137);
+    /* background-color: #4ec0db; */
     width: 100%;
     text-align: center;
     transition: 0.3s;
+     transition: background-color 01s ease;
   }
 
   .nav-item {

@@ -1,7 +1,3 @@
-
-
-
-/* IMPORT */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
 
 *{
@@ -14,7 +10,7 @@ body{
     height: 100vh;
 }
 
-header{
+  header{
     position: fixed;
     background:  #0b1433;
     padding: 20px;
@@ -27,10 +23,16 @@ main{
     display: flex;
     flex-direction: row;
     height: 100vh;
+    width: 100%;
 }
 
 #mapa{
+    width: 80%;
+}
+#tabela {
     width: 100%;
+    /* margin-left: 25%; */
+    margin-top: 7%;
 }
 
 #menu{
@@ -58,6 +60,22 @@ main{
 .text-right{
     color: #fff;
     font-size: 1.2rem;
+}
+.identificacao-user{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 20%;
+}
+#icon-user{
+    height: 20vh;
+    width: auto;
+}
+
+#img-user{
+    height: 120px;
 }
 .sair_btn{
     padding: 5px;
@@ -139,33 +157,18 @@ label #sidebar_btn:hover{
     margin-left: 170px;
     width: 80px;
 }
-.content{
-    background: url(/image/img-2.jpg) no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    transition: 0.5s;
-}
-#check:checked ~ .content{
-    margin-left: 60px;
-}
-#check{
-    display: none;
-}
+.div-pai {
+    display: flex;
+  }
 
-.identificacao-user{
-    width: 100%;
+  .div-filha1 {
+    width: 20%;
+    background-color: #f0f0f0;
+  }
+
+  .div-filha2 {
+    width: 80%;
     display: flex;
     justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    height: 20%;
-}
-#icon-user{
-    height: 20vh;
-    width: auto;
-}
-
-#img-user{
-    height: 120px;
-}
+    /* background-color: #811515; */
+  }
