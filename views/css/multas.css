@@ -28,7 +28,7 @@ main {
 
 #mapa {
   width: 80%;
-  margin-top: 10%;
+  margin-top:30%;
 }
 #tabela {
   width: 100%;
@@ -171,104 +171,9 @@ label #sidebar_btn:hover {
   width: 80%;
   display: flex;
   justify-content: center;
-  align-items: center;
   /* background-color: #811515; */
-  flex-direction: column;
 }
-
-/* CALENDÁRIO */
-.wraper {
-  max-width: 760px;
-  margin: 10px auto;
-  /* background-color: rgb(177, 173, 181); */
-  background-color: rgb(239 239 239);
-  padding: 20px;
-  display: flex;
-  flex-wrap: wrap;
-  border-radius: 8px;
-  box-shadow: 1px 11px 15px -1px rgba(0,0,0,0.54);
-}
-.days-week {
-  display: flex;
-  width: 100%;
-  flex-wrap: wrap;
-  border-bottom: 1px solid blue;
-  padding: 10px 0;
-}
-.number-days {
-  display: flex;
-  width: 100%;
-  flex-wrap: wrap;
-}
-
-.days-week span {
-  color: black;
-  display: inline-block;
-  width: 14.2%;
-  font-size: 1.5em
-}
-.number-days span {
-  display: inline-block;
-  width: 14.2%;
-  /* color: #fff; */
-  margin: 8px 0;
-  font-size: 1.3rem
-}
-.mes-anterior {
-  opacity: 0.5;
-}
-.dia-atual {
-  text-decoration: underline;
-  color: #5e0808;
-}
-.dia-reserva{
-  /* background-color: #51b3ec; */
-  /* text-decoration: underline; */
-  color: #4a9fcf;
-}
-.dia-pagamento {
-  color: red;
-}
-.dia-mecanica{
-  color: burlywood;
-}
-#eventos {
-  height: 50%;
-  /* background-color: #1b595e; */
-}
-.wraper-evento {
-  max-width: 760px;
-  margin: 10px auto;
-  background-color: rgb(108, 71, 145);
-  padding: 20px;
-  display: flex;
-  flex-wrap: wrap;
-  border-radius: 8px;
-}
-
-#wraper-reserva{
-  background-color:#4a9fcf ;
-}
-#wraper-mecanica{
- background-color: burlywood;
-}
-#wraper-pagamento{
-  background-color: red;
-}
-
-#novo-evento{
-  margin-left: 10%;
-    height: 3rem;
-    width: 20%;
-    cursor: pointer;
-    background-color: blue;
-    color: white;
-    font-size: 1.2rem;
-    opacity: 1;
-    transition: opacity 1s ease 0s;
-    border-radius: 20px;
-}
-
-#novo-evento:hover{
-  opacity: 0.5;
+#multa{
+    background-color: #1b595e;
+    text-align: center;
 }

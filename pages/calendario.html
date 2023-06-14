@@ -38,7 +38,7 @@
             <a href="./teste.html"
               ><ion-icon name="car-outline"></ion-icon><span>Veículos</span></a
             >
-            <a href="#"
+            <a href="./colaboradores.html"
               ><ion-icon name="people-outline"></ion-icon
               ><span>Colaboradores</span></a
             >
@@ -59,40 +59,44 @@
           </div>
         </div>
         <div class="div-filha2">
+         
           <div id="mapa">
+            <h1>Calendário</h1>
             <div class="wraper">
+              <h2>Junho</h2>
               <div class="days-week">
-                  <span>Segunda</span>
-                  <span>Terça</span>
-                  <span>Quarta</span>
-                  <span>Quinta</span>
-                  <span>Sexta</span>
-                  <span>Sábado</span>
-                  <span>Domingo</span>
+                  <span>Seg</span>
+                  <span>Ter</span>
+                  <span>Qua</span>
+                  <span>Qui</span>
+                  <span>Sex</span>
+                  <span>Sab</span>
+                  <span>Dom</span>
               </div>
               <div class="number-days">
                   <span class="mes-anterior">30</span>
                   <span class="mes-anterior">31</span>
               </div>
           </div>
-            
+          <button id="novo-evento">Novo evento <ion-icon name="add-circle-outline"></ion-icon></button>
         </div>
-        <div id="eventos">
-          <div class="wraper-evento">
-            <h4>15/02</h4>
-            <p> <br> Feriado</p>
+        <div id="eventos"> 
+        
+          <div class="wraper-evento" id="wraper-reserva">
+            <h4>16/06</h4>
+            <p> <br>Reserva Veículo 003</p>
           </div>
-          <div class="wraper-evento">
-            <h4>15/02</h4>
-            <p> <br> Feriado</p>
+          <div class="wraper-evento" id="wraper-mecanica">
+            <h4>20/06</h4>
+            <p> <br>Mecânica Veículo 012</p>
           </div>
-          <div class="wraper-evento">
-            <h4>15/02</h4>
-            <p> <br> Feriado</p>
+          <div class="wraper-evento" id="wraper-pagamento">
+            <h4>30/06</h4>
+            <p> <br>Pagamento Posto GasolinaBoa</p>
           </div>
-          <div class="wraper-evento">
-            <h4>15/02</h4>
-            <p> <br> Feriado</p>
+          <div class="wraper-evento" id="wraper-pagamento">
+            <h4>31/06</h4>
+            <p> <br>Pagemetnto Mecânica</p>
           </div>
           
         </div>
@@ -102,7 +106,16 @@
         for(let i = 1; i <= 31; i++) {
             if(i == 15) {
                 el.innerHTML += '<span class="dia-atual">'+i+'</span'
-            } else {
+            } else if(i == 16) {
+              el.innerHTML += '<span class="dia-reserva">'+i+'</span'
+            }
+            else if(i == 20) {
+              el.innerHTML += '<span class="dia-mecanica">'+i+'</span'
+            }
+            else if(i == 30 || i == 31) {
+              el.innerHTML += '<span class="dia-pagamento">'+i+'</span'
+            }
+             else {
                 el.innerHTML += '<span>'+i+'</span'
             }
            

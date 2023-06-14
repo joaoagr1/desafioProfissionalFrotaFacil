@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../views/css/contas.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="left">
+          <h3>FrotaFácil</h3>
+        </div>
+        <div class="right">
+          <p class="text-right">EMP: PMM</p>
+          <p class="text-right">SECT: IPPLAM</p>
+        </div>
+      </header>
+      <!-- <main> -->
+      <div class="div-pai">
+        <div class="div-filha1">
+          <div class="sidebar">
+            <div class="identificacao-user">
+              <img src="../views/img/teste_perfil-removebg-preview.png"  id="img-user" />
+              <h2>Adm</h2>
+            </div>
+            <a href="./inicialAdm.html"
+              ><ion-icon name="home-outline"></ion-icon><span>Início</span></a
+            >
+            <a href="./inicialAdm.html"
+              ><ion-icon name="navigate-outline"></ion-icon><span>Reserva</span></a
+            >
+            <a href="./teste.html"
+              ><ion-icon name="car-outline"></ion-icon><span>Veículos</span></a
+            >
+            <a href="./colaboradores.html"
+              ><ion-icon name="people-outline"></ion-icon
+              ><span>Colaboradores</span></a
+            >
+            <a href="#"
+              ><ion-icon name="card-outline"></ion-icon><span>Contas</span></a
+            >
+            <a href="./calendario.html"
+              ><ion-icon name="calendar-outline"></ion-icon
+              ><span>Calendário</span></a
+            >
+            <a href="#"
+              ><ion-icon name="settings-outline"></ion-icon
+              ><span>Configuração</span></a
+            >
+            <a href="./login.html"
+              ><ion-icon name="log-out-outline"></ion-icon><span>Sair</span></a
+            >
+          </div>
+        </div>
+        <div class="div-filha2">
+          <div id="mapa">
+            <section id="tabela">
+                <h1>Contas</h1>
+                <!-- <label for="">Filtro</label> -->
+                <input
+                  type="text"
+                  name="filtro"
+                  id="filtrar-tabela"
+                  placeholder="Digite o Código da Conta"
+                />
+                <table>
+                  <thead>
+                    <tr>
+                      <th>ID</th>
+                      <th>Descrição</th>
+                      <th>Data</th>
+                      <th>Valor</th>
+                      <th>Veículo</th>
+                      <th>Servidor</th>
+                      <th>Status</th>
+                      <!-- <th>Data revisão</th>
+                      <th>Último Uso</th> -->
+                    </tr>
+                  </thead>
+                  <tbody id="tabela-pacientes">
+                    <tr class="paciente" id="primeiro-paciente">
+                      <td class="info-nome">001</td>
+                      <td class="info-peso">Abastecimento Posto GasolinaBoa</td>
+                      <td class="info-altura">14/05/2023</td>
+                      <td class="info-gordura">R$150.00</td>
+                      <td class="info-imc">002</td>
+                      <td class="info-imc">2223</td>
+                      <td class="info-imc">Pago</td>
+                    </tr>
+                    <tr class="paciente" id="fechamento">
+                      <td class="info-nome">001</td>
+                      <td class="info-peso">Abastecimento Posto GasolinaBoa</td>
+                      <td class="info-altura">14/05/2023</td>
+                      <td class="info-gordura">R$150.00</td>
+                      <td class="info-imc">002</td>
+                      <td class="info-imc">2223</td>
+                      <td class="info-imc">Fechamento Mês</td>
+                    </tr>
+                    <tr class="paciente" id="atraso">
+                      <td class="info-nome">001</td>
+                      <td class="info-peso">Abastecimento Posto GasolinaBoa</td>
+                      <td class="info-altura">14/05/2023</td>
+                      <td class="info-gordura">R$150.00</td>
+                      <td class="info-imc">002</td>
+                      <td class="info-imc">2223</td>
+                      <td class="info-imc">Em atraso</td>
+                    </tr>
+    
+                    
+                  </tbody>
+                </table>
+                <span id="erro-ajax" class="invisivel"
+                  >Erro ao buscar os pacientes</span
+                >
+                <button id="buscar-paciente" class="botao bto-principal">
+                  Nova Conta
+                </button>
+                <button>Imprimir</button>
+              </section>
+        </div>
+      </div>
+      <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="./filtro.js"></script>
+</body>
+</html>
