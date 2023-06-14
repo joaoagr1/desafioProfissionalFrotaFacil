@@ -29,6 +29,7 @@ main {
 
 #mapa {
   width: 80%;
+  margin-top: 10%;
 }
 #tabela {
   width: 100%;
@@ -172,6 +173,7 @@ label #sidebar_btn:hover {
   display: flex;
   justify-content: center;
   /* background-color: #811515; */
+  background-color: #e8e0e0;
 }
 
 /* IMPORT FORMUKARIo */
@@ -233,6 +235,7 @@ label #sidebar_btn:hover {
   margin: 20px auto;
   cursor: pointer;
   transition: all 0.3s;
+  margin-left: 40%;
 }
 
 .submit_btn:hover {
@@ -354,4 +357,7 @@ label #sidebar_btn:hover {
 }
 input {
   box-shadow: 9px 20px -18px rgba(0, 0, 0, 0.46);
+}
+h1{
+  padding: 20px;
 }

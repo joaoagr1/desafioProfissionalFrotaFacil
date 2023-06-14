@@ -32,10 +32,10 @@ document
       showMessage("Login realizado com sucesso.");
       console.log(username);
       if(registeredUsers[username].tipoColaborador > 1) {
-        window.open("./logado.html");
+        window.open("./user/logado.html");
       }
       else {
-        window.open("./inicialAdm.html");
+        window.open("./adm/inicialAdm.html");
       }
       // if(tipo > 1) {
       //   window.open("./logado.html");

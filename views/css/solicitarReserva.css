@@ -29,6 +29,7 @@ main {
 
 #mapa {
   width: 80%;
+  margin-top: 10%;
 }
 #tabela {
   width: 100%;
@@ -171,7 +172,7 @@ label #sidebar_btn:hover {
   width: 80%;
   display: flex;
   justify-content: center;
-  /* background-color: #811515; */
+  background-color: #e8e0e0;
 }
 
 /* IMPORT FORMUKARIo */
@@ -233,6 +234,7 @@ label #sidebar_btn:hover {
   margin: 20px auto;
   cursor: pointer;
   transition: all 0.3s;
+  margin-left: 40%;
 }
 
 .submit_btn:hover {
@@ -329,7 +331,7 @@ label #sidebar_btn:hover {
 .form_input {
   font-size: 16px;
   font-family: inherit;
-  padding: 8px 15px;
+  padding: 7px;
   border-radius: 4px;
   border: 1px #f2f2f2 solid;
   background: #fdfdfd;
@@ -353,4 +355,12 @@ label #sidebar_btn:hover {
 }
 input {
   box-shadow: 9px 20px -18px rgba(0, 0, 0, 0.46);
+}
+#botao{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+h1{
+  padding: 20px;
 }

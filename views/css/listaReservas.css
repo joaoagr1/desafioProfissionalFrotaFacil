@@ -256,3 +256,11 @@ table {
   #new-travel:hover{
     opacity: 0.42;
   }
+
+  .info-aprovada{
+    background-color: #5CB85C;
+  }
+  .info-pendente{
+    background-color: #d7d94c;
+    text-decoration: underline;
+  }

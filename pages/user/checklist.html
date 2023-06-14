@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../views/css/checklist.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="/views/css/checklist.css">
+    <link rel="Website Icon" href="/views/img/logoInteira.png" />
+    <title>Checklist - FrotaFácil</title>
 </head>
 <body>
     <header>
@@ -20,7 +21,7 @@
         <div class="div-filha1">
           <div class="sidebar">
             <div class="identificacao-user">
-              <img src="../views/img/usuario.png"  id="img-user" />
+              <img src="/views/img/usuario.png"  id="img-user" />
               <h2>User</h2>
             </div>
             <a href="./logado.html"
@@ -40,15 +41,16 @@
               ><ion-icon name="settings-outline"></ion-icon
               ><span>Configuração</span></a
             >
-            <a href="./login.html"
+            <a href="/pages/login.html"
               ><ion-icon name="log-out-outline"></ion-icon><span>Sair</span></a
             >
           </div>
         </div>
         <div class="div-filha2">
           <div id="mapa">
+            <h1>Checklist</h1>
             <section id="tabela">
-                <h1>Viagens</h1>
+               
                 <!-- <label for="">Filtro</label> -->
                 
                 <input
@@ -57,16 +59,16 @@
                   id="filtrar-tabela"
                   placeholder="Digite o Código"
                 />
-                <button id="new-travel">Nova Locação</button>
+                <!-- <button id="new-travel">Nova Locação</button> -->
                 <table>
                   <thead>
                     <tr>
-                      <th>Código da Reserva</th>
+                      <th>Código do Checklist</th>
                       <th>ID Veículo</th>
                       <th>Placa</th>
-                      <th>Matrícula Colaborador</th>
                       <th>Data</th>
                       <th>Hora</th>
+                      <th>Status</th>
                       <!-- <th>Data admissão</th>
                       <th>N° Multas</th>
                       <th>Checklist em atraso</th> -->
@@ -77,9 +79,9 @@
                       <td class="info-nome">0085</td>
                       <td class="info-peso">001</td>
                       <td class="info-peso">PLJ-5678</td>
-                      <td class="info-altura">11111111</td>
                       <td class="info-gordura">17/05/2023</td>
                       <td class="info-imc">14:00</td>
+                      <td class="info-altura">Realizado</td>
                     </tr>
             
             
@@ -103,6 +105,7 @@
       nomodule
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
+    <script src="/script/filtro.js"></script>
 </body>
 </html>
 

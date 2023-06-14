@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../views/css/viagem.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="/views/css/viagem.css">
+    <link rel="Website Icon" href="/views/img/logoInteira.png" />
+    <title>Cadastrar Viagem - FrotaFácil</title>
 </head>
 <body>
     <header>
@@ -21,13 +22,13 @@
         <div class="div-filha1">
           <div class="sidebar">
             <div class="identificacao-user">
-              <img src="../views/img/teste_perfil-removebg-preview.png"  id="img-user" />
+              <img src="/views/img/teste_perfil-removebg-preview.png"  id="img-user" />
               <h2>Adm</h2>
             </div>
             <a href="./inicialAdm.html"
               ><ion-icon name="home-outline"></ion-icon><span>Início</span></a
             >
-            <a href="./viagens.html"
+            <a href="./listaReservas.html"
               ><ion-icon name="navigate-outline"></ion-icon><span>Reserva</span></a
             >
             <a href="./teste.html"
@@ -37,7 +38,7 @@
               ><ion-icon name="people-outline"></ion-icon
               ><span>Colaboradores</span></a
             >
-            <a href="#"
+            <a href="./contas.html"
               ><ion-icon name="card-outline"></ion-icon><span>Contas</span></a
             >
             <a href="./calendario.html"
@@ -48,16 +49,17 @@
               ><ion-icon name="settings-outline"></ion-icon
               ><span>Configuração</span></a
             >
-            <a href="./login.html"
+            <a href="/pages/login.html"
               ><ion-icon name="log-out-outline"></ion-icon><span>Sair</span></a
             >
           </div>
         </div>
         <div class="div-filha2">
           <div id="mapa">
+            <h1>Cadastrar Viagem</h1>
             <div class="container_form">
 
-              <h1>Formulário de Cadastro</h1>
+              <!-- <h1>Formulário de Cadastro</h1> -->
   
               <form class="form" action="#" method="post">
                   
@@ -151,12 +153,13 @@
                       <div class="submit">
   
                         <input type="hidden" name="acao" value="enviar">
-                        <button type="submit" name="Submit" class="submit_btn" >Cadastrar</button>
+                      
                       
                       </div>
               </form>
   
-      </div><!--container_form-->
+      </div><!--container_form--> 
+       <button type="submit" name="Submit" class="submit_btn" >Cadastrar</button>
         </div>
       </div>
       <script
