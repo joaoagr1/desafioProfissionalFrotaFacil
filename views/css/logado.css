@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
 
 *{
@@ -60,6 +61,22 @@ main{
 .text-right{
     color: #fff;
     font-size: 1.2rem;
+}
+.identificacao-user{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 20%;
+}
+#icon-user{
+    height: 20vh;
+    width: auto;
+}
+
+#img-user{
+    height: 120px;
 }
 .sair_btn{
     padding: 5px;
@@ -141,69 +158,6 @@ label #sidebar_btn:hover{
     margin-left: 170px;
     width: 80px;
 }
-/* .content{
-    background: url(/image/img-2.jpg) no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    transition: 0.5s;
-}
-#check:checked ~ .content{
-    margin-left: 60px;
-}
-#check{
-    display: none;
-} */
-
-.identificacao-user{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    height: 20%;
-}
-#icon-user{
-    height: 20vh;
-    width: auto;
-}
-
-#img-user{
-    height: 120px;
-}
-
-
-table {
-    width: 100%;
-    margin-bottom: 0.5em;
-    table-layout: fixed;
-  }
-  
-  td,
-  th {
-    padding: 0.7em;
-    margin: 0;
-    border: 1px solid #ccc;
-    text-align: center;
-  }
-  
-  th {
-    font-weight: bold;
-    background-color: #eee;
-  }
-  
-  label {
-    color: #555;
-    display: block;
-    margin-bottom: 0.2em;
-  }
-
-  #continer-principal{
-    width: 100%;
-    display: flex;
-
-}
-
 .div-pai {
     display: flex;
   }
@@ -218,26 +172,4 @@ table {
     display: flex;
     justify-content: center;
     /* background-color: #811515; */
-  }
-
-  #filtrar-tabela {
-    width: 200px;
-    height: 35px;
-    margin-bottom: 10px;
-    border: 1px solid ;
-    padding: 5px;
-  }
-
-  .invisivel{
-    display: none;
-  }
-
-  .uso {
-    background-color:#5CB85C;
-  }
-  .revisao {
-    background-color: #e35c33;
-  }
-  h1{
-    padding: 20px;
   }

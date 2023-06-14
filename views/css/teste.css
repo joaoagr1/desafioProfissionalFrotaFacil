@@ -225,6 +225,7 @@ table {
     height: 35px;
     margin-bottom: 10px;
     border: 1px solid ;
+    padding: 5px;
   }
 
   .invisivel{
@@ -236,4 +237,7 @@ table {
   }
   .revisao {
     background-color: #e35c33;
+  }
+  h1{
+    padding: 20px;
   }

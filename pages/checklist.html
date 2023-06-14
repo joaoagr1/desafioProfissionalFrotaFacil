@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../views/css/logado.css">
+    <link rel="stylesheet" href="../views/css/checklist.css">
     <title>Document</title>
 </head>
 <body>
@@ -47,7 +47,52 @@
         </div>
         <div class="div-filha2">
           <div id="mapa">
-           
+            <section id="tabela">
+                <h1>Viagens</h1>
+                <!-- <label for="">Filtro</label> -->
+                
+                <input
+                  type="text"
+                  name="filtro"
+                  id="filtrar-tabela"
+                  placeholder="Digite o Código"
+                />
+                <button id="new-travel">Nova Locação</button>
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Código da Reserva</th>
+                      <th>ID Veículo</th>
+                      <th>Placa</th>
+                      <th>Matrícula Colaborador</th>
+                      <th>Data</th>
+                      <th>Hora</th>
+                      <!-- <th>Data admissão</th>
+                      <th>N° Multas</th>
+                      <th>Checklist em atraso</th> -->
+                    </tr>
+                  </thead>
+                  <tbody id="tabela-pacientes">
+                    <tr class="paciente" id="primeiro-paciente">
+                      <td class="info-nome">0085</td>
+                      <td class="info-peso">001</td>
+                      <td class="info-peso">PLJ-5678</td>
+                      <td class="info-altura">11111111</td>
+                      <td class="info-gordura">17/05/2023</td>
+                      <td class="info-imc">14:00</td>
+                    </tr>
+            
+            
+                   
+                  </tbody>
+                </table>
+                <span id="erro-ajax" class="invisivel"
+                  >Erro ao buscar os pacientes</span
+                >
+                <!-- <button id="buscar-paciente" class="botao bto-principal">
+                  Importar
+                </button> -->
+              </section>
         </div>
       </div>
       <script
@@ -60,3 +105,6 @@
     ></script>
 </body>
 </html>
+
+
+

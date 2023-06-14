@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../views/css/colaboradores.css" />
+    <link rel="stylesheet" href="../views/css/viagens.css" />
     <title>Document</title>
   </head>
   <body>
@@ -27,13 +27,13 @@
           <a href="./inicialAdm.html"
             ><ion-icon name="home-outline"></ion-icon><span>Início</span></a
           >
-          <a href="./viagens.html"
+          <a href="./viagem.html"
             ><ion-icon name="navigate-outline"></ion-icon><span>Reserva</span></a
           >
           <a href="./teste.html"
             ><ion-icon name="car-outline"></ion-icon><span>Veículos</span></a
           >
-          <a href="#"
+          <a href="./colaboradores.html"
             ><ion-icon name="people-outline"></ion-icon
             ><span>Colaboradores</span></a
           >
@@ -56,48 +56,40 @@
       <div class="div-filha2">
         <div id="mapa">
           <section id="tabela">
-            <h1>Colaboradores</h1>
+            <h1>Viagens</h1>
             <!-- <label for="">Filtro</label> -->
+            
             <input
               type="text"
               name="filtro"
               id="filtrar-tabela"
-              placeholder="Digite a Matrícula"
+              placeholder="Digite o Código"
             />
+            <button id="new-travel">Nova Locação</button>
             <table>
               <thead>
                 <tr>
-                  <th>Matrícula</th>
-                  <th>Nome</th>
-                  <th>CPF</th>
-                  <th>Status</th>
-                  <th>Tipo Colaborador</th>
-                  <th>Data admissão</th>
+                  <th>Código da Reserva</th>
+                  <th>ID Veículo</th>
+                  <th>Placa</th>
+                  <th>Matrícula Colaborador</th>
+                  <th>Data</th>
+                  <th>Hora</th>
+                  <!-- <th>Data admissão</th>
                   <th>N° Multas</th>
-                  <th>Checklist em atraso</th>
+                  <th>Checklist em atraso</th> -->
                 </tr>
               </thead>
               <tbody id="tabela-pacientes">
                 <tr class="paciente" id="primeiro-paciente">
-                  <td class="info-nome">511712</td>
-                  <td class="info-peso">Jóse Augusto</td>
+                  <td class="info-nome">0085</td>
+                  <td class="info-peso">001</td>
+                  <td class="info-peso">PLJ-5678</td>
                   <td class="info-altura">11111111</td>
-                  <td class="info-gordura">Trabalhando</td>
-                  <td class="info-imc">01</td>
-                  <td class="info-imc">17/02/2021</td>
-                  <td class="info-imc">00</td>
-                  <td class="info-imc revisao">01</td>
+                  <td class="info-gordura">17/05/2023</td>
+                  <td class="info-imc">14:00</td>
                 </tr>
-                <tr class="paciente" id="primeiro-paciente">
-                  <td class="info-nome">512102</td>
-                  <td class="info-peso">Felipe Martins</td>
-                  <td class="info-altura">11111111</td>
-                  <td class="info-gordura">Trabalhando</td>
-                  <td class="info-imc">01</td>
-                  <td class="info-imc">17/02/2021</td>
-                  <td class="info-imc">00</td>
-                  <td class="info-imc">00</td>
-                </tr>
+
 
                
               </tbody>
@@ -105,9 +97,9 @@
             <span id="erro-ajax" class="invisivel"
               >Erro ao buscar os pacientes</span
             >
-            <button id="buscar-paciente" class="botao bto-principal">
+            <!-- <button id="buscar-paciente" class="botao bto-principal">
               Importar
-            </button>
+            </button> -->
           </section>
         </div>
       </div>
@@ -123,5 +115,11 @@
      nomodule
      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
    ></script>
+   <script>
+    let btn = document.querySelector("#new-travel");
+    btn.addEventListener("click", (event)=> {
+        window.location.href = "./viagem.html"
+    })
+   </script>
   </body>
 </html>
