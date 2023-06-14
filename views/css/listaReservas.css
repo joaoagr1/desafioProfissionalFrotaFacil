@@ -264,3 +264,8 @@ table {
     background-color: #d7d94c;
     text-decoration: underline;
   }
+  .info-arquivo{
+    text-decoration: underline;
+    color: rgba(69, 131, 202, 0.89);
+    cursor: pointer;
+  }
