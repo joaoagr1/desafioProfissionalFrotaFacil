@@ -32,7 +32,7 @@
             <a href="./inicialAdm.html"
               ><ion-icon name="home-outline"></ion-icon><span>Início</span></a
             >
-            <a href="./viagens.html"
+            <a href="./listaReservas.html"
               ><ion-icon name="navigate-outline"></ion-icon><span>Reserva</span></a
             >
             <a href="./teste.html"
@@ -60,9 +60,54 @@
         </div>
         <div class="div-filha2">
           <div id="mapa">
-           
+            <div class="wraper">
+              <div class="days-week">
+                  <span>Segunda</span>
+                  <span>Terça</span>
+                  <span>Quarta</span>
+                  <span>Quinta</span>
+                  <span>Sexta</span>
+                  <span>Sábado</span>
+                  <span>Domingo</span>
+              </div>
+              <div class="number-days">
+                  <span class="mes-anterior">30</span>
+                  <span class="mes-anterior">31</span>
+              </div>
+          </div>
+            
+        </div>
+        <div id="eventos">
+          <div class="wraper-evento">
+            <h4>15/02</h4>
+            <p> <br> Feriado</p>
+          </div>
+          <div class="wraper-evento">
+            <h4>15/02</h4>
+            <p> <br> Feriado</p>
+          </div>
+          <div class="wraper-evento">
+            <h4>15/02</h4>
+            <p> <br> Feriado</p>
+          </div>
+          <div class="wraper-evento">
+            <h4>15/02</h4>
+            <p> <br> Feriado</p>
+          </div>
+          
         </div>
       </div>
+      <script>
+        let el = document.querySelector('.number-days');
+        for(let i = 1; i <= 31; i++) {
+            if(i == 15) {
+                el.innerHTML += '<span class="dia-atual">'+i+'</span'
+            } else {
+                el.innerHTML += '<span>'+i+'</span'
+            }
+           
+        }
+    </script>
       <script
       type="module"
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"

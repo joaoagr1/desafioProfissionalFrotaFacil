@@ -1,174 +1,232 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap");
 
-*{
-    margin: 0;
-    padding: 0;
-    font-family: 'Poppins', sans-serif;
-    border: 0;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  border: 0;
 }
-body{
-    height: 100vh;
-}
-
-  header{
-    position: fixed;
-    background:  #0b1433;
-    padding: 20px;
-    width: 100%;
-    height: 30px;
-    display: flex;
+body {
+  height: 100vh;
 }
 
-main{
-    display: flex;
-    flex-direction: row;
-    height: 100vh;
-    width: 100%;
+header {
+  position: fixed;
+  background: #0b1433;
+  padding: 20px;
+  width: 100%;
+  height: 30px;
+  display: flex;
 }
 
-#mapa{
-    width: 80%;
+main {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  width: 100%;
+}
+
+#mapa {
+  width: 80%;
+  margin-top: 10%;
 }
 #tabela {
-    width: 100%;
-    /* margin-left: 25%; */
-    margin-top: 7%;
+  width: 100%;
+  /* margin-left: 25%; */
+  margin-top: 7%;
 }
 
-#menu{
-    width: 20%;
+#menu {
+  width: 20%;
 }
 
-.left{
-    width: 80%;
+.left {
+  width: 80%;
 }
-.left h3{
-    color: #fff;
-    margin: 0;
-    text-transform: uppercase;
-    font-size: 22px;
-    font-weight: 800;
+.left h3 {
+  color: #fff;
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 22px;
+  font-weight: 800;
 }
-.left span{
-    color: #51b3ec;
+.left span {
+  color: #51b3ec;
 }
-.right{
-    width: 20%;
-    display: flex;
-    gap: 30px;
+.right {
+  width: 20%;
+  display: flex;
+  gap: 30px;
 }
-.text-right{
-    color: #fff;
-    font-size: 1.2rem;
+.text-right {
+  color: #fff;
+  font-size: 1.2rem;
 }
-.identificacao-user{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    height: 20%;
+.identificacao-user {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 20%;
 }
-#icon-user{
-    height: 20vh;
-    width: auto;
+#icon-user {
+  height: 20vh;
+  width: auto;
 }
 
-#img-user{
-    height: 120px;
+#img-user {
+  height: 120px;
 }
-.sair_btn{
-    padding: 5px;
-    /* background: #51b3ec; */
-    text-decoration: none;
-    float: right;
-    margin-top: -30px;
-    margin-right: 40px;
-    border-radius: 2px;
-    font-size: 15px;
-    font-weight: 500;
-    color: #fff;
-    transition: 0.5s;
-    transition-property: background;
+.sair_btn {
+  padding: 5px;
+  /* background: #51b3ec; */
+  text-decoration: none;
+  float: right;
+  margin-top: -30px;
+  margin-right: 40px;
+  border-radius: 2px;
+  font-size: 15px;
+  font-weight: 500;
+  color: #fff;
+  transition: 0.5s;
+  transition-property: background;
 }
-.sair_btn:hover{
-    background: #4a9fcf;
+.sair_btn:hover {
+  background: #4a9fcf;
 }
-.sidebar{
-    position: fixed;
-    width: 20%;
-    height: 100%;
-    margin-top: 70px;
-    padding-top: 30px;
-    left: 0;
-    background: rgb(18, 188, 137);
-    transition: 0.5s;
-    transition-property: left;
+.sidebar {
+  position: fixed;
+  width: 20%;
+  height: 100%;
+  margin-top: 70px;
+  padding-top: 30px;
+  left: 0;
+  background: rgb(18, 188, 137);
+  transition: 0.5s;
+  transition-property: left;
 }
-.sidebar .image{
-    width: 100px;
-    height: 100px;
-    border-radius: 100px;
+.sidebar .image {
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
 }
-.sidebar h2{
-    color: #fff;
-    margin-top: 0;
-    margin-bottom: 20px;
+.sidebar h2 {
+  color: #fff;
+  margin-top: 0;
+  margin-bottom: 20px;
 }
-.sidebar a{
-    color: #fff;
-    display: block;
-    width: 100%;
-    line-height: 60px;
-    text-decoration: none;
-    padding-left: 40px;
-    box-sizing: border-box;
-    transition: 0.5s;
-    transition-property:background ;
+.sidebar a {
+  color: #fff;
+  display: block;
+  width: 100%;
+  line-height: 60px;
+  text-decoration: none;
+  padding-left: 40px;
+  box-sizing: border-box;
+  transition: 0.5s;
+  transition-property: background;
 }
-.sidebar a:hover{
-    background: #1b595e;
+.sidebar a:hover {
+  background: #1b595e;
 }
-.sidebar ion-icon{
-    padding-right: 10px;
+.sidebar ion-icon {
+  padding-right: 10px;
 }
-label #sidebar_btn{
-    z-index: 1;
-    position: fixed;
-    left: 300px;
-    color: #fff;
-    font-size: 25px;
-    margin: 5px 0;
-    cursor: pointer;
-    transition: 0.5s;
-    transition-property:color ;
+label #sidebar_btn {
+  z-index: 1;
+  position: fixed;
+  left: 300px;
+  color: #fff;
+  font-size: 25px;
+  margin: 5px 0;
+  cursor: pointer;
+  transition: 0.5s;
+  transition-property: color;
 }
-label #sidebar_btn:hover{
-    color: #51b3ec;
+label #sidebar_btn:hover {
+  color: #51b3ec;
 }
-#check:checked ~ .sidebar{
-    left: -190px;
+#check:checked ~ .sidebar {
+  left: -190px;
 }
-#check:checked ~ .sidebar a span{
-    display: none;
+#check:checked ~ .sidebar a span {
+  display: none;
 }
-#check:checked ~ .sidebar a{
-    font-size: 20px;
-    margin-left: 170px;
-    width: 80px;
+#check:checked ~ .sidebar a {
+  font-size: 20px;
+  margin-left: 170px;
+  width: 80px;
 }
 .div-pai {
-    display: flex;
-  }
+  display: flex;
+}
 
-  .div-filha1 {
-    width: 20%;
-    background-color: #f0f0f0;
-  }
+.div-filha1 {
+  width: 20%;
+  background-color: #f0f0f0;
+}
 
-  .div-filha2 {
-    width: 80%;
-    display: flex;
-    justify-content: center;
-    /* background-color: #811515; */
-  }
+.div-filha2 {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: #811515; */
+  flex-direction: column;
+}
+
+/* CALENDÁRIO */
+.wraper {
+  max-width: 760px;
+  margin: 10px auto;
+  background-color: rgb(177, 173, 181);
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 8px;
+}
+.days-week {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  border-bottom: 1px solid blue;
+  padding: 10px 0;
+}
+.number-days {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.days-week span {
+  color: black;
+  display: inline-block;
+  width: 14.2%;
+}
+.number-days span {
+  display: inline-block;
+  width: 14.2%;
+  color: #fff;
+  margin: 8px 0;
+}
+.mes-anterior {
+  opacity: 0.5;
+}
+.dia-atual {
+  text-decoration: underline;
+}
+
+#eventos {
+  height: 50%;
+  /* background-color: #1b595e; */
+}
+.wraper-evento {
+  max-width: 760px;
+  margin: 10px auto;
+  background-color: rgb(108, 71, 145);
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 8px;
+}

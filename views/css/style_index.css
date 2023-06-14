@@ -115,7 +115,7 @@ a {
     width: 100%;
     text-align: center;
     transition: 0.3s;
-     transition: background-color 01s ease;
+    transition: background-color 01s ease;
   }
 
   .nav-item {
@@ -409,7 +409,6 @@ form textarea {
   }
 }
 
-
 /** estilização do footer  */
 
 .main_footer {
@@ -429,7 +428,7 @@ form textarea {
 .colfooter {
   width: 100%;
   height: auto;
-  
+
   margin-bottom: 2em;
 }
 
@@ -651,5 +650,3 @@ form textarea {
     margin-left: 100px;
   }
 }
-
-

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        box-sizing: border-box;
+        padding: 0;
+    }
+    .wraper {
+        max-width: 760px;
+        margin: 10px auto;
+        background-color: rgb(177, 173, 181);
+        padding: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        border-radius: 8px;
+    }
+    .days-week{
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        border-bottom: 1px solid blue;
+        padding: 10px 0;
+    }
+    .number-days{
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .days-week span{
+        color: black;
+        display: inline-block;
+        width: 14.2%;
+
+    }
+    .number-days span {
+        display: inline-block;
+        width: 14.2%;
+        color: #fff;
+        margin: 8px 0;
+    }
+    .mes-anterior{
+        opacity: 0.5;
+    }
+    .dia-atual {
+        text-decoration: underline;
+    }
+
+</style>
+<body>
+    <div class="wraper">
+        <div class="days-week">
+            <span>Segunda</span>
+            <span>Terça</span>
+            <span>Quarta</span>
+            <span>Quinta</span>
+            <span>Sexta</span>
+            <span>Sábado</span>
+            <span>Domingo</span>
+        </div>
+        <div class="number-days">
+            <span class="mes-anterior">30</span>
+            <span class="mes-anterior">31</span>
+        </div>
+    </div>
+    <script>
+        let el = document.querySelector('.number-days');
+        for(let i = 1; i <= 31; i++) {
+            if(i == 15) {
+                el.innerHTML += '<span class="dia-atual">'+i+'</span'
+            } else {
+                el.innerHTML += '<span>'+i+'</span'
+            }
+           
+        }
+    </script>
+</body>
+</html>
