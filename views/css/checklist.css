@@ -255,3 +255,11 @@ label {
 #new-travel:hover {
   opacity: 0.42;
 }
+.pendente{
+  background-color: #d7d94c;
+}
+.info-pendente{
+  text-decoration: underline;
+  color: rgba(69, 131, 202, 0.89);
+    cursor: pointer;
+}

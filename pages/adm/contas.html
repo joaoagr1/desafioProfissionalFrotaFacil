@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/views/css/contas.css">
-    <link rel="Website Icon" href="/views/img/logoInteira.png" />
+    <link rel="stylesheet" href="../../views/css/contas.css">
+    <link rel="Website Icon" href="../../views/img/logoInteira.png" />
     <title>Contas- FrotaFácil</title>
 </head>
 <body>
@@ -22,14 +22,14 @@
         <div class="div-filha1">
           <div class="sidebar">
             <div class="identificacao-user">
-              <img src="/views/img/teste_perfil-removebg-preview.png"  id="img-user" />
+              <img src="../../views/img/teste_perfil-removebg-preview.png"  id="img-user" />
               <h2>Adm</h2>
             </div>
             <a href="./inicialAdm.html"
               ><ion-icon name="home-outline"></ion-icon><span>Início</span></a
             >
             <a href="./listaReservas.html"
-              ><ion-icon name="navigate-outline"></ion-icon><span>Reserva</span></a
+              ><ion-icon name="navigate-outline"></ion-icon><span>Locações</span></a
             >
             <a href="./teste.html"
               ><ion-icon name="car-outline"></ion-icon><span>Veículos</span></a
@@ -49,7 +49,7 @@
               ><ion-icon name="settings-outline"></ion-icon
               ><span>Configuração</span></a
             >
-            <a href="/pages/login.html"
+            <a href="../../pages/login.html"
               ><ion-icon name="log-out-outline"></ion-icon><span>Sair</span></a
             >
           </div>
@@ -65,10 +65,14 @@
                   id="filtrar-tabela"
                   placeholder="Digite o Código da Conta"
                 />
+                <button id="conta" class="botao bto-principal">
+                  Nova Conta
+                </button>
                 <table>
                   <thead>
                     <tr>
                       <th>ID</th>
+                      <th>Código</th>
                       <th>Descrição</th>
                       <th>Data</th>
                       <th>Valor</th>
@@ -82,25 +86,58 @@
                   <tbody id="tabela-pacientes">
                     <tr class="paciente" id="primeiro-paciente">
                       <td class="info-nome">001</td>
-                      <td class="info-peso">Abastecimento Posto GasolinaBoa</td>
+                      <td class="info-imc">12503</td>
+                      <td class="info-peso">Gasolina Posto GasolinaBoa </td>
                       <td class="info-altura">14/05/2023</td>
                       <td class="info-gordura">R$150.00</td>
                       <td class="info-imc">002</td>
                       <td class="info-imc">2223</td>
                       <td class="info-imc">Pago</td>
                     </tr>
-                    <tr class="paciente" id="fechamento">
-                      <td class="info-nome">001</td>
-                      <td class="info-peso">Abastecimento Posto GasolinaBoa</td>
-                      <td class="info-altura">14/05/2023</td>
-                      <td class="info-gordura">R$150.00</td>
-                      <td class="info-imc">002</td>
+                    <tr class="paciente" id="primeiro-paciente">
+                      <td class="info-nome">002</td>
+                      <td class="info-imc">63589</td>
+                      <td class="info-peso">Gasolina Posto GasolinaBoa</td>
+                      <td class="info-altura">15/05/2023</td>
+                      <td class="info-gordura">R$100.00</td>
+                      <td class="info-imc">007</td>
+                      <td class="info-imc">1256</td>
+                      <td class="info-imc">Pago</td>
+                    </tr>
+                    <tr class="paciente" id="primeiro-paciente">
+                      <td class="info-nome">003</td>
+                      <td class="info-imc">45896</td>
+                      <td class="info-peso">Troca de Óleo  Mecânica CarroFeliz</td>
+                      <td class="info-altura">16/06/2023</td>
+                      <td class="info-gordura">R$90.00</td>
+                      <td class="info-imc">012</td>
                       <td class="info-imc">2223</td>
+                      <td class="info-imc">Pago</td>
+                    </tr>
+                    <tr class="paciente">
+                      <td class="info-nome">004</td>
+                      <td class="info-imc">23660</td>
+                      <td class="info-peso">Álcool Posto GasolinaBoa</td>
+                      <td class="info-altura">10/06/2023</td>
+                      <td class="info-gordura">R$130.00</td>
+                      <td class="info-imc">005</td>
+                      <td class="info-imc">3689</td>
+                      <td class="info-imc">Pago</td>
+                    </tr>
+                    <tr class="paciente" id="fechamento">
+                      <td class="info-nome">005</td>
+                      <td class="info-imc">45783</td>
+                      <td class="info-peso">Revisão Mecânica CarroFeliz</td>
+                      <td class="info-altura">20/06/2023</td>
+                      <td class="info-gordura">R$320.00</td>
+                      <td class="info-imc">001</td>
+                      <td class="info-imc">5896</td>
                       <td class="info-imc">Fechamento Mês</td>
                     </tr>
                     <tr class="paciente" id="atraso">
-                      <td class="info-nome">001</td>
-                      <td class="info-peso">Abastecimento Posto GasolinaBoa</td>
+                      <td class="info-nome">006</td>
+                      <td class="info-imc">19632</td>
+                      <td class="info-peso">Gasolina Posto GasolinaBoa</td>
                       <td class="info-altura">14/05/2023</td>
                       <td class="info-gordura">R$150.00</td>
                       <td class="info-imc">002</td>
@@ -114,10 +151,7 @@
                 <span id="erro-ajax" class="invisivel"
                   >Erro ao buscar os pacientes</span
                 >
-                <button id="buscar-paciente" class="botao bto-principal">
-                  Nova Conta
-                </button>
-                <button>Imprimir</button>
+                <button id="btn-imprimir">Imprimir</button>
               </section>
         </div>
       </div>

@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/views/css/teste.css" />
-    <link rel="Website Icon" href="/views/img/logoInteira.png" />
+    <link rel="stylesheet" href="../../views/css/teste.css" />
+    <link rel="Website Icon" href="../../views/img/logoInteira.png" />
     <title>Veículos - FrotaFácil</title>
   </head>
   <body>
@@ -23,7 +23,7 @@
         <div class="sidebar">
           <div class="identificacao-user">
             <img
-              src="/views/img/teste_perfil-removebg-preview.png"
+              src="../../views/img/teste_perfil-removebg-preview.png"
               id="img-user"
             />
             <h2>Adm</h2>
@@ -33,7 +33,7 @@
           >
           <a href="./listaReservas.html"
             ><ion-icon name="navigate-outline"></ion-icon
-            ><span>Reserva</span></a
+            ><span>Locações</span></a
           >
           <a href="#"
             ><ion-icon name="car-outline"></ion-icon><span>Veículos</span></a
@@ -53,7 +53,7 @@
             ><ion-icon name="settings-outline"></ion-icon
             ><span>Configuração</span></a
           >
-          <a href="/pages/login.html"
+          <a href="../../pages/login.html"
             ><ion-icon name="log-out-outline"></ion-icon><span>Sair</span></a
           >
         </div>
@@ -69,6 +69,7 @@
               id="filtrar-tabela"
               placeholder="Digite o ID do veículo"
             />
+            <button id="new-travel">Checklists</button>
             <table>
               <thead>
                 <tr>
@@ -85,8 +86,8 @@
               <tbody id="tabela-pacientes">
                 <tr class="paciente" id="primeiro-paciente">
                   <td class="info-nome">001</td>
-                  <td class="info-peso">Fiat Uno</td>
-                  <td class="info-altura">AYC7894</td>
+                  <td class="info-peso">Fiat Uno 1.0 Gasolina</td>
+                  <td class="info-altura">AYC-7894</td>
                   <td class="info-gordura">Branco</td>
                   <td class="info-imc">Parado</td>
                   <td class="info-imc">2010</td>
@@ -96,8 +97,8 @@
 
                 <tr class="paciente uso">
                   <td class="info-nome">002</td>
-                  <td class="info-peso">Gol</td>
-                  <td class="info-altura">DEF5694</td>
+                  <td class="info-peso">Gol 1.0 Gasolina</td>
+                  <td class="info-altura">DEF-5694</td>
                   <td class="info-gordura">Branco</td>
                   <td class="info-imc">Em Uso</td>
                   <td class="info-imc">2015</td>
@@ -106,8 +107,8 @@
                 </tr>
                 <tr class="paciente uso">
                   <td class="info-nome">003</td>
-                  <td class="info-peso">Onix</td>
-                  <td class="info-altura">GHI9031</td>
+                  <td class="info-peso">Onix 1.4 Flex</td>
+                  <td class="info-altura">GHI-9031</td>
                   <td class="info-gordura">Branco</td>
                   <td class="info-imc">Em uso</td>
                   <td class="info-imc">2018</td>
@@ -116,10 +117,10 @@
                 </tr>
                 <tr class="paciente revisao">
                   <td class="info-nome">004</td>
-                  <td class="info-peso">Fiesta</td>
-                  <td class="info-altura">JKL6491</td>
+                  <td class="info-peso">Fiesta 1.4 Gasolina</td>
+                  <td class="info-altura">JKL-6491</td>
                   <td class="info-gordura">Branco</td>
-                  <td class="info-imc">Revisão</td>
+                  <td class="info-imc">Mecânica</td>
                   <td class="info-imc">2012</td>
                   <td class="info-imc">10/08/2022</td>
                   <td class="info-imc">20/12/2022</td>
@@ -127,8 +128,8 @@
 
                 <tr class="paciente">
                   <td class="info-nome">005</td>
-                  <td class="info-peso">Sandero</td>
-                  <td class="info-altura">MNO8524</td>
+                  <td class="info-peso">Sandero 1.0 Gasolina</td>
+                  <td class="info-altura">MNO-8524</td>
                   <td class="info-gordura">Branco</td>
                   <td class="info-imc">Parado</td>
                   <td class="info-imc">2014</td>
@@ -138,8 +139,8 @@
 
                 <tr class="paciente uso">
                   <td class="info-nome">006</td>
-                  <td class="info-peso">Corolla</td>
-                  <td class="info-altura">PQR2017</td>
+                  <td class="info-peso">Corolla 1.6 Flex</td>
+                  <td class="info-altura">PQR-2017</td>
                   <td class="info-gordura">Branco</td>
                   <td class="info-imc">Em uso</td>
                   <td class="info-imc">2019</td>
@@ -148,8 +149,8 @@
                 </tr>
                 <tr class="paciente revisao">
                   <td class="info-nome">007</td>
-                  <td class="info-peso">Civic</td>
-                  <td class="info-altura">STU5491</td>
+                  <td class="info-peso">Civic 1.6 Gasolina</td>
+                  <td class="info-altura">STU-5491</td>
                   <td class="info-gordura">Branco</td>
                   <td class="info-imc">Mecânica</td>
                   <td class="info-imc">2017</td>
@@ -158,8 +159,8 @@
                 </tr>
                 <tr class="paciente uso">
                   <td class="info-nome">008</td>
-                  <td class="info-peso">HB20</td>
-                  <td class="info-altura">VWX9517</td>
+                  <td class="info-peso">HB20 1.4 Gasolina</td>
+                  <td class="info-altura">VWX-9517</td>
                   <td class="info-gordura">Branco</td>
                   <td class="info-imc">Em uso</td>
                   <td class="info-imc">2013</td>
@@ -168,8 +169,8 @@
                 </tr>
                 <tr class="paciente">
                   <td class="info-nome">009</td>
-                  <td class="info-peso">Palio</td>
-                  <td class="info-altura">YZA2697</td>
+                  <td class="info-peso">Palio 1.0 Gasolina</td>
+                  <td class="info-altura">YZA-2697</td>
                   <td class="info-gordura">Branco</td>
                   <td class="info-imc">Parado</td>
                   <td class="info-imc">2013</td>
@@ -178,8 +179,8 @@
                 </tr>
                 <tr class="paciente uso">
                   <td class="info-nome">010</td>
-                  <td class="info-peso">Fox</td>
-                  <td class="info-altura">BCD5698</td>
+                  <td class="info-peso">Fox 1.4 Gasolina</td>
+                  <td class="info-altura">BCD-5698</td>
                   <td class="info-gordura">Branco</td>
                   <td class="info-imc">Em uso</td>
                   <td class="info-imc">2016</td>
@@ -188,10 +189,10 @@
                 </tr>
                 <tr class="paciente revisao">
                   <td class="info-nome">011</td>
-                  <td class="info-peso">Focus</td>
-                  <td class="info-altura">XCV9128</td>
+                  <td class="info-peso">Focus 1.4 Gasolina</td>
+                  <td class="info-altura">XCV-9128</td>
                   <td class="info-gordura">Branco</td>
-                  <td class="info-imc">Batido</td>
+                  <td class="info-imc">Mecânica</td>
                   <td class="info-imc">2011</td>
                   <td class="info-imc">25/11/2022</td>
                   <td class="info-imc">26/01/2023</td>
@@ -199,10 +200,10 @@
 
                 <tr class="paciente revisao">
                   <td class="info-nome">012</td>
-                  <td class="info-peso">Logan</td>
-                  <td class="info-altura">AFG6487</td>
+                  <td class="info-peso">Logan 1.0 Flex</td>
+                  <td class="info-altura">AFG-6487</td>
                   <td class="info-gordura">Branco</td>
-                  <td class="info-imc">Revisao</td>
+                  <td class="info-imc">Mecânica</td>
                   <td class="info-imc">2019</td>
                   <td class="info-imc">04/12/2022</td>
                   <td class="info-imc">18/02/2023</td>
@@ -212,9 +213,9 @@
             <span id="erro-ajax" class="invisivel"
               >Erro ao buscar os pacientes</span
             >
-            <button id="buscar-paciente" class="botao bto-principal">
+            <!-- <button id="buscar-paciente" class="botao bto-principal">
               Importar
-            </button>
+            </button> -->
           </section>
         </div>
       </div>

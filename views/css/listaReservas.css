@@ -251,6 +251,7 @@ table {
     font-size:1.2rem;
     opacity: 1;
     transition: opacity 1s ease 0s;
+    border-radius: 20px;
   }
 
   #new-travel:hover{
@@ -258,14 +259,16 @@ table {
   }
 
   .info-aprovada{
-    background-color: #5CB85C;
+    background-color: #3a910c;
   }
   .info-pendente{
     background-color: #d7d94c;
     text-decoration: underline;
+    cursor: pointer;
+    color: rgb(0 53 114 / 89%);
   }
   .info-arquivo{
     text-decoration: underline;
-    color: rgba(69, 131, 202, 0.89);
+    color: rgb(0 53 114 / 89%);
     cursor: pointer;
   }

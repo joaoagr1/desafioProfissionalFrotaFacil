@@ -231,11 +231,26 @@ label {
 }
 
 .uso {
-  background-color: #5cb85c;
+  background-color: #3a910c;
 }
 .revisao {
   background-color: #e35c33;
 }
 h1 {
   padding: 20px;
+}
+#new-travel {
+  margin-left: 10%;
+  height: 3rem;
+  width: 20%;
+  cursor: pointer;
+  background-color: blue;
+  color: white;
+  font-size:1.2rem;
+  opacity: 1;
+  transition: opacity 1s ease 0s;
+  border-radius: 20px;
+}
+#new-travel:hover{
+  opacity: 0.42;
 }

@@ -245,3 +245,36 @@ h1 {
 #atraso {
     background-color: #e35c33;
 }
+#conta {
+  margin-left: 10%;
+  height: 3rem;
+  width: 20%;
+  cursor: pointer;
+  background-color: blue;
+  color: white;
+  font-size: 1.2rem;
+  opacity: 1;
+  transition: opacity 1s ease 0s;
+  border-radius: 10px;
+}
+
+#conta:hover {
+  opacity: 0.42;
+}
+
+#btn-imprimir {
+  /* margin-left: 5%; */
+  height: 3rem;
+  width: 20%;
+  cursor: pointer;
+  background-color: rgb(30, 149, 71);
+  color: white;
+  font-size: 1.2rem;
+  opacity: 1;
+  transition: opacity 1s ease 0s;
+  border-radius: 10px;
+}
+
+#btn-imprimir:hover {
+  opacity: 0.42;
+}
